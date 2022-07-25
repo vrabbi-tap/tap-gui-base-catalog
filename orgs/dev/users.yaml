@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: shai
+spec:
+  profile:
+    displayName: Shai Wasserman
+    email: shai@terasky.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [dev-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: lev
+spec:
+  profile:
+    displayName: Lev Andelman
+    email: lev@terasky.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [dev-team]

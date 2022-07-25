@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: anatoly
+spec:
+  profile:
+    displayName: Anatoly
+    email: anatoly@terasky.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [devops-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: oleg
+spec:
+  profile:
+    displayName: Oleg Prestin
+    email: oleg@terasky.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [devops-team]

@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: yelb-ui
+  description: Yelb UI App
+  tags:
+    - javascript
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app=yelb-ui,tier=frontend'
+    'backstage.io/techdocs-ref': dir:.
+  links:
+    - url: http://yelb.dev.vrabbi.cloud/
+      title: 'Dev Yelb UI'
+      icon: locallibrary
+    - url: http://yelb.qa.vrabbi.cloud/
+      title: 'QA Yelb UI'
+      icon: locallibrary
+    - url: http://yelb.prod.vrabbi.cloud/
+      title: 'Prod Yelb UI'
+      icon: locallibrary
+spec:
+  type: service
+  lifecycle: experimental
+  owner: dev-team
+  system: yelb
+  dependsOn: [Component:yelb-appserver]

@@ -1,0 +1,7 @@
+site_name: 'TAP GUI Domain'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core

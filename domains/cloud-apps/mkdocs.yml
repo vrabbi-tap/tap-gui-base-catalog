@@ -1,0 +1,7 @@
+site_name: 'Cloud Apps Domain'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core

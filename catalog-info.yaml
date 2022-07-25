@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: tap-gui-catalog-info
+  description: A Base TAP GUI Catalog
+spec:
+  targets:
+    - ./orgs/default/org.yaml
+    - ./orgs/default/team.yaml
+    - ./orgs/default/users.yaml
+    - ./orgs/dev/org.yaml
+    - ./orgs/dev/team.yaml
+    - ./orgs/dev/users.yaml
+    - ./orgs/devops/org.yaml
+    - ./orgs/devops/team.yaml
+    - ./orgs/devops/users.yaml
+    - ./orgs/it/org.yaml
+    - ./orgs/it/team.yaml
+    - ./orgs/it/users.yaml
+    - ./orgs/platform/org.yaml
+    - ./orgs/platform/team.yaml
+    - ./orgs/platform/users.yaml
+    - ./domains/tap-gui/domain.yaml
+    - ./domains/tap-gui/systems/tap-gui/system.yaml
+    - ./domains/tap-gui/systems/tap-gui/components/tap-gui/component.yaml
+    - ./domains/cloud-apps/domain.yaml
+    - ./domains/cloud-apps/systems/yelb/system.yaml
+    - ./domains/cloud-apps/systems/yelb/components/redis-server/component.yaml
+    - ./domains/cloud-apps/systems/yelb/components/yelb-appserver/component.yaml
+    - ./domains/cloud-apps/systems/yelb/components/yelb-db/component.yaml
+    - ./domains/cloud-apps/systems/yelb/components/yelb-ui/component.yaml

@@ -1,3 +1,4 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
@@ -1167,7 +1168,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: image-policy-webhook
-  description: [Deprecated] Tanzu Image Policy Webhook System
+  description: '[Deprecated] Tanzu Image Policy Webhook System'
 spec:
   owner: platform-team
   domain: tap
@@ -1176,7 +1177,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: image-policy-webhook-controller
-  description: [Deprecated] Image Policy Webhook Component
+  description: '[Deprecated] Image Policy Webhook Component'
   tags:
     - v1alpha1
   annotations:

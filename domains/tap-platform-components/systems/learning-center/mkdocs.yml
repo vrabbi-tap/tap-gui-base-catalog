@@ -34,11 +34,11 @@ nav:
   - Installation: install-learning-center.hbs.md
   - About Workshops: about-learning-center/about-workshops.hbs.md
   - Getting Started:
-    - : getting-started/workshops.hbs.md
-    - : getting-started/learning-center-operator.hbs.md
-    - : getting-started/deleting-learning-center.hbs.md
-    - : getting-started/about.hbs.md
-    - : getting-started/training-portal.hbs.md
+    - Workshops: getting-started/workshops.hbs.md
+    - Learning Center Operator: getting-started/learning-center-operator.hbs.md
+    - Uninstalling: getting-started/deleting-learning-center.hbs.md
+    - About: getting-started/about.hbs.md
+    - Training Portal: getting-started/training-portal.hbs.md
 
 plugins:
   - techdocs-core

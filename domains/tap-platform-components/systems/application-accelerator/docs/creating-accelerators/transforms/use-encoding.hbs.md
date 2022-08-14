@@ -1,6 +1,6 @@
 # UseEncoding transform
 
-When considering files in textual form, for example, when doing text replacement with the [ReplaceText transform](replace-text.md),
+When considering files in textual form, for example, when doing text replacement with the [ReplaceText transform](replace-text.hbs.md),
 the engine must decide which [encoding](https://en.wikipedia.org/wiki/Character_encoding) to use.
 
 By default, `UTF-8` is assumed. If any files must be handled differently,
@@ -20,7 +20,7 @@ Supported encoding names include, for example, `UTF-8`, `US-ASCII`, and `ISO-885
 
 ## <a id="example-usage"></a>Example use
 
-`UseEncoding` is typically used as an upfront transform to, for example, [ReplaceText](replace-text.md)
+`UseEncoding` is typically used as an upfront transform to, for example, [ReplaceText](replace-text.hbs.md)
 in a chain:
 
 ```yaml
@@ -36,4 +36,4 @@ transformations:
 
 ## See also
 
-* [ReplaceText](replace-text.md)
+* [ReplaceText](replace-text.hbs.md)

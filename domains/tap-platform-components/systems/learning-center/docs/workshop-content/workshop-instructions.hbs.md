@@ -689,7 +689,7 @@ The banner of the action block in this example displays "Prefix: Title", with th
 
 ## <a id="escape-code-block-content"></a>Escaping of code block content
 
-Because the [Liquid](https://www.npmjs.com/package/liquidjs) template engine is applied to workshop content, you must escape content in code blocks that conflict with the syntactic elements of the Liquid template engine. To escape such elements, you can suspend processing by the template engine for that section of workshop content to ensure it is rendered correctly. Do this by using a Liquid `{% raw %}...{% endraw %}` block.
+Because the [Liquid](https://www.npmjs.com/package/liquidjs) template engine is applied to workshop content, you must escape content in code blocks that conflict with the syntactic elements of the Liquid template engine. To escape such elements, you can suspend processing by the template engine for that section of workshop content to ensure it is rendered correctly. Do this by using a Liquid \`{% raw %}...{% endraw %}\` block.
 
 ~~~
 {% raw %}

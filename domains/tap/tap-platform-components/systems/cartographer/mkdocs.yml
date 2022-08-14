@@ -1,6 +1,7 @@
 site_name: 'Cartographer system'
 
 nav:
+  - Home: index.md
   - About: about.hbs.md
   - Building From Source: building-from-source.hbs.md
   - Dockerfile Based Builds: dockerfile-based-builds.hbs.md

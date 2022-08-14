@@ -21,5 +21,5 @@ condition: <SpEL expression>
 
 ## See also
 
-* [Combo](combo.md) is often used to express a `Merge` **and** other transformations in a
+* [Combo](combo.hbs.md) is often used to express a `Merge` **and** other transformations in a
 shorthand syntax.

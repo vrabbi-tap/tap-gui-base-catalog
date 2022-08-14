@@ -5,8 +5,8 @@ You might often use it without even realizing it.
 Whenever you author a node in the transform tree without specifying `type: x`,
 you're using `Combo`.
 
-`Combo` combines the behaviors of [Include](include.md), [Exclude](exclude.md),
-[Merge](merge.md), [Chain](chain.md), [UniquePath](unique-path.md), and even [Let](let.md)
+`Combo` combines the behaviors of [Include](include.hbs.md), [Exclude](exclude.hbs.md),
+[Merge](merge.hbs.md), [Chain](chain.hbs.md), [UniquePath](unique-path.hbs.md), and even [Let](let.hbs.md)
 in a way that feels natural.
 
 ## <a id="syntax-referance"></a>Syntax reference
@@ -44,7 +44,7 @@ A few things to know about properties of the `Combo` transform:
 
 When you configure the `Combo` transform with all properties, it behaves as follows:
 
-1. Applies the `include` as if it were the first element of a [Chain](chain.md).
+1. Applies the `include` as if it were the first element of a [Chain](chain.hbs.md).
    The default value is `['**']`; if not present, all files are retained.
 
 2. Applies the `exclude` as if it were the second element of the chain. The default
@@ -52,21 +52,21 @@ When you configure the `Combo` transform with all properties, it behaves as foll
    only files that match the `include`, but are not excluded by the `exclude`, remain.
 
 3. Feeds all those files as input to all transforms declared in the `merge` property,
-   exactly as [Merge](merge.md) does. The result of that `Merge`, which is the third transform in the big chain,
+   exactly as [Merge](merge.hbs.md) does. The result of that `Merge`, which is the third transform in the big chain,
    is another set of files. If there are no elements in `merge`, the previous result is directly fed to the next step.
 
 4. The result of the merge step is prone to generate duplicate entries for the same `path`.
-   So it's implicitly forwarded to a [UniquePath](unique-path.md) check, configured
-   with the `onConflict` [strategy](conflict-resolution.md). The default policy is to retain
+   So it's implicitly forwarded to a [UniquePath](unique-path.hbs.md) check, configured
+   with the `onConflict` [strategy](conflict-resolution.hbs.md). The default policy is to retain
    files appearing later. The results of the transform that appear later in the `merge`
    block "win" against results appearing earlier.
 
-5. Passes that result as the input to the [chain](chain.md) defined by the `chain` property.
+5. Passes that result as the input to the [chain](chain.hbs.md) defined by the `chain` property.
    Put another way, the chain is prolonged with the elements defined in `chain`.
    If there are no elements in `chain`, it's as if the previous result was used directly.
 
 6. If the `let` property is defined in the `Combo`, the whole execution
-   is wrapped inside a [Let](let.md) that exposes its derived symbols.
+   is wrapped inside a [Let](let.hbs.md) that exposes its derived symbols.
 
 To recap in pseudo code, a giant `Combo` behaves like this:
 

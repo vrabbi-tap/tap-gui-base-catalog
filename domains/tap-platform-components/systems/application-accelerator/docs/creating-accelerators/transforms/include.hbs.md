@@ -29,5 +29,5 @@ transformations:
 
 ## See also
 
-* [Exclude](exclude.md)
-* [Combo](combo.md)   
+* [Exclude](exclude.hbs.md)
+* [Combo](combo.hbs.md)   

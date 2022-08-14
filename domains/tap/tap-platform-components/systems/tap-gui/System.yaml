@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Tanzu Application Platform GUI System
+  name: tap-gui
+spec:
+  domain: tap
+  owner: platform-team

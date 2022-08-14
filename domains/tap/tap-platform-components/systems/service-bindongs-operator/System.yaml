@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Service Bindings Operator System
+  name: service-bindongs-operator
+spec:
+  domain: tap
+  owner: platform-team

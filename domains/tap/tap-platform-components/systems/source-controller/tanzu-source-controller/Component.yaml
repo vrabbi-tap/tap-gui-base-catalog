@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: control-plane=controller-manager
+    backstage.io/kubernetes-namespace: source-system
+  description: Tanzu Source Controller Component
+  name: tanzu-source-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: source-controller
+  type: service

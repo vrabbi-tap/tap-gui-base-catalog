@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Metadata Store System
+  name: metadata-store
+spec:
+  domain: tap
+  owner: platform-team

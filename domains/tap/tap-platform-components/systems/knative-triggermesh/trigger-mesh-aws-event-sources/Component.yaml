@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=aws-event-sources-controller
+    backstage.io/kubernetes-namespace: triggermesh
+  description: Knative Trigger Mesh AWS Event Source Controller Component
+  name: trigger-mesh-aws-event-sources
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-triggermesh
+  type: service

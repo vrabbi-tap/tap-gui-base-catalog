@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/component=cainjector,app.kubernetes.io/instance=cert-manager,app.kubernetes.io/name=cainjector
+  description: Cert Manager CA Injector Component
+  name: cert-manager-ca-injector
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: cert-manager
+  type: service

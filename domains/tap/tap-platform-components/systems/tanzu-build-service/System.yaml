@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Tanzu Build Service System
+  name: tanzu-build-service
+spec:
+  domain: tap
+  owner: platform-team

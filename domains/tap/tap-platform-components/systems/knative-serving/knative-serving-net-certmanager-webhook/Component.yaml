@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/component=net-certmanager,app.kubernetes.io/name=knative-serving,app=net-certmanager-webhook
+    backstage.io/kubernetes-namespace: knative-serving
+  description: Knative Serving Cert Manager Webhook Component
+  name: knative-serving-net-certmanager-webhook
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-serving
+  type: service

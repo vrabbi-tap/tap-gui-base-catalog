@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=kpack-webhook
+  description: Kpack Webhook Component
+  name: kpack-webhook
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: tanzu-build-service
+  type: service

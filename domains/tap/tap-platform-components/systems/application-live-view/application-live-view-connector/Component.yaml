@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: name=application-live-view-connector
+  description: Tanzu Application Live View Connector Component
+  name: application-live-view-connector
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: application-live-view
+  type: service

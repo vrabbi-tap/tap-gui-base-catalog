@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=acc-engine
+  description: Tanzu Application Accelerator Engine Component
+  name: application-accelerator
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: application-accelerator
+  type: service

@@ -1,0 +1,20 @@
+site_name: 'Cartographer system'
+
+nav:
+  - About: about.hbs.md
+  - Building From Source: building-from-source.hbs.md
+  - Dockerfile Based Builds: dockerfile-based-builds.hbs.md
+  - Git Authentication: git-auth.hbs.md
+  - GitOps vs RegOps: gitops-vs-regops.hbs.md
+  - Known Bugs: know-bugs.hbs.md
+  - OOTB Delivery Basic: ootb-delivery-basic.hbs.md
+  - OOTB Supply Chain Basic: ootb-supply-chain-basic.hbs.md
+  - OOTB Supply Chain Testing Scanning: ootb-supply-chain-testing-scanning.hbs.md
+  - OOTB Supply Chain Testing: ootb-supply-chain-testing.hbs.md
+  - OOTB Templates: ootb-templates.hbs.md
+  - Pre Built Image: pre-built-image.hbs.md
+  - Tanzu Build Service Integration: tbs.hbs.md
+  - Authoring Supply Chains: authoring-supply-chains.hbs.md
+
+plugins:
+  - techdocs-core

@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=dependency-updater
+    backstage.io/kubernetes-namespace: build-service
+  description: TBS Tanzu Network Dependency Updater Component
+  name: dependency-updater
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: tanzu-build-service
+  type: service

@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=source-controller
+    backstage.io/kubernetes-namespace: flux-system
+  description: Flux Source Controller Component
+  name: flux-source-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: source-controller
+  type: service

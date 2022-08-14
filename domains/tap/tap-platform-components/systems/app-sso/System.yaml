@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Application SSO System
+  name: app-sso
+spec:
+  domain: tap
+  owner: platform-team

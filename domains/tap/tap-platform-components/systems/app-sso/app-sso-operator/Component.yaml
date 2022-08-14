@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: name=operator
+    backstage.io/kubernetes-namespace: appsso
+  description: Application SSO Operator Component
+  name: app-sso-operator
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: app-sso
+  type: service

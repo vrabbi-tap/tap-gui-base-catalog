@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: role=webhook
+    backstage.io/kubernetes-namespace: cosign-system
+  description: Cosign Webhook Component
+  name: cosign-webhook
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: cosign-policy-controller
+  type: service

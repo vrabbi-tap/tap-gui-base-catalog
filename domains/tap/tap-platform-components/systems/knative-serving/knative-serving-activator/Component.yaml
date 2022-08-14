@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/component=activator,app.kubernetes.io/name=knative-serving
+    backstage.io/kubernetes-namespace: knative-serving
+  description: Knative Serving Activator Component
+  name: knative-serving-activator
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-serving
+  type: service

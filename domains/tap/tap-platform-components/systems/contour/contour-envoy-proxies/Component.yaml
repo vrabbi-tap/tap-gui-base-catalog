@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=envoy
+    backstage.io/kubernetes-namespace: tanzu-system-ingress
+  description: Contour Envoy Proxies Component
+  name: contour-envoy-proxies
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: contour
+  type: service

@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=resource-claims-apiserver
+    backstage.io/kubernetes-namespace: services-toolkit
+  description: Services Toolkit Resource Claims API Server Component
+  name: resource-claims-api-server
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: services-toolkit
+  type: service

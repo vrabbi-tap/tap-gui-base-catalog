@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/component=broker-controller,app.kubernetes.io/name=knative-eventing
+    backstage.io/kubernetes-namespace: knative-eventing
+  description: Knative Eventing Broker Controller Component
+  name: knative-eventing-mt-broker-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-eventing
+  type: service

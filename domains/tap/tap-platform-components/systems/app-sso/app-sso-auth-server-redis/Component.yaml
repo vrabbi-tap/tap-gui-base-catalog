@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/component=redis,app.kubernetes.io/created-by=operator,app.kubernetes.io/managed-by=sso.apps.tanzu.vmware.com
+  description: Application SSO Authentication Servers Redis Backend Component
+  name: app-sso-auth-server-redis
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: app-sso
+  type: service

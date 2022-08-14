@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=warmer
+    backstage.io/kubernetes-namespace: build-service
+  description: TBS Smart Warmer Controller Component
+  name: smart-warmer-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: tanzu-build-service
+  type: service

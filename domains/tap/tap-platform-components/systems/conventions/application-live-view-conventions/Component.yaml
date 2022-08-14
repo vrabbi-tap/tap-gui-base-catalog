@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=appliveview-webhook
+  description: Tanzu Application Live View Conventions Webhook Component
+  name: application-live-view-conventions
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: conventions
+  type: service

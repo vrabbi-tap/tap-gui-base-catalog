@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=rabbitmq-broker-webhook
+    backstage.io/kubernetes-namespace: knative-eventing
+  description: Knative Eventing RabbitMQ Broker Webhook Component
+  name: knative-eventing-rabbitmq-broker-webhook
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-eventing
+  type: service

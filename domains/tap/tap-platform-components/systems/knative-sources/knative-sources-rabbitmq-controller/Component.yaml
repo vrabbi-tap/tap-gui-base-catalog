@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: control-plane=rabbitmq-controller-manager
+    backstage.io/kubernetes-namespace: knative-sources
+  description: Knative Sources RabbitMQ Controller Component
+  name: knative-sources-rabbitmq-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-sources
+  type: service

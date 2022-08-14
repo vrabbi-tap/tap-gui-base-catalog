@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/component=domain-mapping,app.kubernetes.io/name=knative-serving,app=domainmapping-webhook
+    backstage.io/kubernetes-namespace: knative-serving
+  description: Knative Serving Domain Mapping Webhook Component
+  name: knative-serving-domain-mapping-webhook
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-serving
+  type: service

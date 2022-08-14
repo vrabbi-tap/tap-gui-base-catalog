@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/component=controller,app.kubernetes.io/instance=default,app.kubernetes.io/name=controller,app.kubernetes.io/part-of=tekton-pipelines
+    backstage.io/kubernetes-namespace: tekton-pipelines
+  description: Tekton Pipelines Controller Component
+  name: tekton-pipelines-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: tekton
+  type: service

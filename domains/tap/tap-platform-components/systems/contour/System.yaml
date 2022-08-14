@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Contour System
+  name: contour
+spec:
+  domain: tap
+  owner: platform-team

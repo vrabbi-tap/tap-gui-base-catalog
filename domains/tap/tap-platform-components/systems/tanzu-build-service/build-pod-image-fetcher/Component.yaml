@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=build-pod-image-fetcher
+    backstage.io/kubernetes-namespace: build-service
+  description: TBS build pod image fetcher Component
+  name: build-pod-image-fetcher
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: tanzu-build-service
+  type: service

@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: eventing.knative.dev/role=sugar-controller
+    backstage.io/kubernetes-namespace: knative-eventing
+  description: Knative Eventing Sugar Controller Component
+  name: knative-eventing-sugar-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-eventing
+  type: service

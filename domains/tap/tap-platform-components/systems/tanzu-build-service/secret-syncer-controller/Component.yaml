@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=secret-syncer
+    backstage.io/kubernetes-namespace: build-service
+  description: TBS Secret Syncer Controller Component
+  name: secret-syncer-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: tanzu-build-service
+  type: service

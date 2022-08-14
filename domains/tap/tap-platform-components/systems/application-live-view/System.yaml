@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Tanzu Application Live View System
+  name: application-live-view
+spec:
+  domain: tap
+  owner: platform-team

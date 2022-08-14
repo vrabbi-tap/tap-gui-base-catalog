@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=rabbitmq-webhook
+    backstage.io/kubernetes-namespace: knative-sources
+  description: Knative Sources RabbitMQ kpack-webhook Component
+  name: knative-sources-rabbitmq-webhook
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-sources
+  type: service

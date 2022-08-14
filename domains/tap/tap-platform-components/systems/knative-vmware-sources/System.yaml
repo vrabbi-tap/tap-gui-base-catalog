@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Knative Trigger Mesh System
+  name: knative-vmware-sources
+spec:
+  domain: tap
+  owner: platform-team

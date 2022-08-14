@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app=webhook
+    backstage.io/kubernetes-namespace: vmware-sources
+  description: Knative VMware Event Source Controller Component
+  name: knative-vmware-sources
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: knative-vmware-sources
+  type: service

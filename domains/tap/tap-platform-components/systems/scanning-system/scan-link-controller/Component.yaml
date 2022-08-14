@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: control-plane=controller-manager
+    backstage.io/kubernetes-namespace: scan-link-system
+  description: Scan Link Controller Component
+  name: scan-link-controller
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: scanning-system
+  type: service

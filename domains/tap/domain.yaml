@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
-  name: tap-gui-domain
-  description: Everything related to the Tanzu Application Platform GUI
+  name: tanzu-application-platform
+  description: Everything related to the Tanzu Application Platform
   links:
     - url: https://www.vrabbi.cloud/blog/categories/tap
       title: vRabbi TAP Blogs
@@ -10,7 +10,5 @@ metadata:
     - url: https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/index.html
       title: TAP Documentation
       icon: docs
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
 spec:
   owner: platform-team

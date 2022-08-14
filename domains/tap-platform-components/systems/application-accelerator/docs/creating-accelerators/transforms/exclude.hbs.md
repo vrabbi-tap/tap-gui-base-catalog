@@ -4,9 +4,9 @@ The `Exclude` transform retains files based on their `path`, letting everything 
 whose path matches _at least_ one of the configured `patterns`. The contents of files, and any of their other characteristics, are unaffected.
 
 `Exclude` is a basic building block seldom used _as is_, which makes sense
-if composed inside a [Chain](chain.md) or a [Merge](merge.md).
+if composed inside a [Chain](chain.hbs.md) or a [Merge](merge.hbs.md).
 It is often more convenient to leverage the shorthand notation offered
-by [Combo](combo.md).
+by [Combo](combo.hbs.md).
 
 ## <a id="syntax-reference"></a>Syntax reference
 
@@ -28,5 +28,5 @@ transformations:
 
 ## See also
 
-* [Include](include.md)
-* [Combo](combo.md)
+* [Include](include.hbs.md)
+* [Combo](combo.hbs.md)

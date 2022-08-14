@@ -3,6 +3,8 @@ kind: System
 metadata:
   description: Cartographer System
   name: cartographer
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
 spec:
   domain: tap
   owner: platform-team

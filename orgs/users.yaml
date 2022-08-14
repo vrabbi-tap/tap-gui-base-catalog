@@ -7,7 +7,8 @@ spec:
     displayName: Guest User
     email: guest@example.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf:
+  - default-team
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -18,7 +19,9 @@ spec:
     displayName: Default User 01
     email: guest-01@example.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf:
+  - default-team
+  - platform-team
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -29,4 +32,5 @@ spec:
     displayName: Default User 02
     email: guest-02@example.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf: 
+  - default-team

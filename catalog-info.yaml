@@ -5,21 +5,11 @@ metadata:
   description: A Base TAP GUI Catalog
 spec:
   targets:
-    - ./orgs/default/org.yaml
+    - ./orgs/default.yaml
     - ./orgs/default/team.yaml
-    - ./orgs/default/users.yaml
-    - ./orgs/dev/org.yaml
-    - ./orgs/dev/team.yaml
-    - ./orgs/dev/users.yaml
-    - ./orgs/devops/org.yaml
-    - ./orgs/devops/team.yaml
-    - ./orgs/devops/users.yaml
-    - ./orgs/it/org.yaml
-    - ./orgs/it/team.yaml
-    - ./orgs/it/users.yaml
-    - ./orgs/platform/org.yaml
-    - ./orgs/platform/team.yaml
-    - ./orgs/platform/users.yaml
+    - ./orgs/users.yaml
+    - ./orgs/dev.yaml
+    - ./orgs/platform.yaml
     - ./domains/cloud-apps/domain.yaml
     - ./domains/cloud-apps/systems/yelb/system.yaml
     - ./domains/cloud-apps/systems/yelb/components/redis-server/component.yaml

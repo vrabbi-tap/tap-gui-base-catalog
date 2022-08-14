@@ -13,3 +13,17 @@ spec:
     email: demo@example.com
     picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
   children: [dev-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dev-team
+  description: Dev Team
+spec:
+  type: team
+  profile:
+    displayName: Dev Team
+    email: team-a@example.com
+    picture: https://avatars.dicebear.com/api/identicon/team-a@example.com.svg?background=%23fff&margin=25
+  parent: dev-org
+  children: []

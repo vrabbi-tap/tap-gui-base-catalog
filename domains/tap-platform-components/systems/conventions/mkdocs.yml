@@ -1,0 +1,19 @@
+site_name: 'Cartographer Conventions System'
+
+nav:
+  - About: index.md
+  - Installation: install-conv-service.hbs.md
+  - Troubleshooting: troubleshooting.hbs.md
+  - Creating Conventions: creating-conventions.hbs.md
+  - Reference:
+    - BOM Reference: reference/bom.hbs.md
+    - Cluster Pod Convention Reference: reference/cluster-pod-convention.hbs.md
+    - Convention Resources Reference: reference/convention-resources.hbs.md
+    - Image Config Reference: reference/image-config.hbs.md
+    - Pod Convention Context Spec Reference: reference/pod-convention-context-spec.hbs.md
+    - Pod Convention Context Status Reference: reference/pod-convention-context-status.hbs.md
+    - Pod Convention Context Reference: reference/pod-convention-context.hbs.md
+    - Pod Intent Reference: reference/pod-intent.hbs.md
+
+plugins:
+  - techdocs-core

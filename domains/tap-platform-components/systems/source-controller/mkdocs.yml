@@ -1,0 +1,13 @@
+site_name: 'Source Controller system'
+
+nav:
+  - About: index.md
+  - FluxCD Source Controller:
+    - Installation: install-fluxcd-source-controller.hbs.md
+  - Tanzu Source Controller:
+    - Installation: install-source-controller.hbs.md
+    - Troubleshooting: troubleshooting.hbs.md
+    - Reference: reference.hbs.md
+
+plugins:
+  - techdocs-core

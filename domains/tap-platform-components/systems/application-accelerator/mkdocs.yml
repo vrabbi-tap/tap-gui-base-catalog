@@ -1,0 +1,37 @@
+site_name: 'Application Accelerator'
+
+nav:
+  - About: index.md
+  - Installation: install-app-acc.hbs.md
+  - Troubleshooting: troubleshooting.hbs.md
+  - Configuration: configuration.hbs.md
+  - Specs:
+    - Endpoint Spec: specs/endpoint-spec.hbs.md
+    - Engine Spec: specs/engine-spec.hbs.md
+    - Options Spec: specs/options-spec.hbs.md
+  - Creating Accelerators:
+    - Accelerator CRD: creating-accelerators/accelerator-crd.hbs.md
+    - Accelerator YAML Sample: creating-accelerators/accelerator-yaml-sample.hbs.md
+    - Accelerator YAML: creating-accelerators/accelerator-yaml.hbs.md
+    - Composition: creating-accelerators/composition.hbs.md
+    - Creating Accelerators: creating-accelerators/creating-accelerators.hbs.md
+    - SPEL Samples: creating-accelerators/spel-samples.hbs.md
+    - Transforms Introduction: creating-accelerators/transform-intro.hbs.md
+    - Transforms:
+      - Chain Transformation: creating-accelerators/transforms/chain.hbs.md
+      - Combo Transformation: creating-accelerators/transforms/combo.hbs.md
+      - Exclude Transformation: creating-accelerators/transforms/exclude.hbs.md
+      - Include Transformation: creating-accelerators/transforms/include.hbs.md
+      - Invoke Fragment Transformation: creating-accelerators/transforms/invoke-fragment.hbs.md
+      - Let Transformation: creating-accelerators/transforms/let.hbs.md
+      - Merge Transformation: creating-accelerators/transforms/merge.hbs.md
+      - Open Rewrite Recipe Transformation: creating-accelerators/transforms/open-rewrite-recipe.hbs.md
+      - Replace Text Transformation: creating-accelerators/transforms/replace-text.hbs.md
+      - Rewrite Path Transformation: creating-accelerators/transforms/rewrite-path.hbs.md
+      - Unique Path Transformation: creating-accelerators/transforms/unqiue-path.hbs.md
+      - Use Encoding Transformation: creating-accelerators/transforms/use-encoding.hbs.md
+      - YTT Transformation: creating-accelerators/transforms/yee.hbs.md
+      - Conflict Resolution In Transformations: creating-accelerators/transforms/conflict-resolution.hbs.md
+
+plugins:
+  - techdocs-core

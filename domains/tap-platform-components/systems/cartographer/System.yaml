@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Cartographer System
+  name: cartographer
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  domain: tap
+  owner: platform-team

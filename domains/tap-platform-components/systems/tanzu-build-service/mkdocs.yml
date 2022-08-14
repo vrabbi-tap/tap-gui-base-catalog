@@ -1,0 +1,13 @@
+site_name: 'Knative Sources system'
+
+nav:
+  - About: index.md
+  - Troubleshooting: troubleshooting.hbs.md
+  - Dependencies: dependencies.hbs.md
+  - Airgapped Environments: install-airgapped.hbs.md
+  - Installation: install-tbs.hbs.md
+  - Workload Config: tbs-workload-config.hbs.md
+  - Image Signing: tbs-image-signing.hbs.md
+
+plugins:
+  - techdocs-core

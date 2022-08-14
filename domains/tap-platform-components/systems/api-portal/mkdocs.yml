@@ -1,0 +1,7 @@
+site_name: 'API Portal Docs'
+
+nav:
+  - About: index.md
+
+plugins:
+  - techdocs-core

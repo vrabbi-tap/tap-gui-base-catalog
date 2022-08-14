@@ -1,0 +1,45 @@
+site_name: 'TAP GUI system'
+
+nav:
+  - About: index.md
+  - View Cluster Setup: cluster-view-setup.hbs.md
+  - Installation: install-tap-gui.hbs.md
+  - TLS Configuration: tls.hbs.md
+  - Database: database.hbs.md
+  - Customization:
+    - Support Menu: customize/support-menu.hbs.md
+    - Branding: customize/customize-branding.hbs.md
+  - Troubleshooting: troubleshooting.hbs.md
+  - Techdocs:
+    - Usage: techdocs/usage.hbs.md
+  - Plugins:
+    - About Plugins: plugins/about.hbs.md
+    - App Live View:
+      - About: plugins/app-live-view.hbs.md
+      - Spring Cloud Gateway: plugins/app-live-view-springcloudgateway.hbs.md
+      - Spring Boot: plugins/app-live-view-springboot.hbs.md
+      - Steeltoe: plugins/app-live-view-steeltoe.hbs.md
+    - API Documentation:
+      - About: plugins/api-docs.hbs.md
+      - Getting Started: plugins/api-docs-getting-started.hbs.md
+    - App Accelerator:
+      - About: plugins/application-accelerator.hbs.md
+    - Resource Visibility:
+      - About: plugins/runtime-resource-visibility.hbs.md
+    - Supply Chain Visibility:
+      - About: plugins/scc-tap-gui.hbs.md
+  - Authentication: auth.hbs.md
+  - Integrations: integrations.hbs.md
+  - RBAC:
+    - Viewing Resources on Auth Enabled Clusters: tap-gui-rbac/view-rsrcs-rbac-only-global.hbs.md
+    - GKE:
+      - About: tap-gui-rbac/set-up-tap-gui-rbac-with-gke-auth.hbs.md
+      - Configuration: tap-gui-rbac/set-up-tap-gui-rbac-only-gke.hbs.md
+    - Roles: tap-gui-rbac/assigning-kubernetes-roles.hbs.md
+  - Catalog:
+    - Operations: catalog/catalog-operations.hbs.md
+  - Access: accessing-tap-gui.hbs.md
+  - Upgrading: upgrades.hbs.md
+  - Non Public CA Trust: non-standard-certs.hbs.md
+plugins:
+  - techdocs-core

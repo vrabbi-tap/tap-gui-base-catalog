@@ -1,0 +1,24 @@
+site_name: 'Scanning System system'
+
+nav:
+  - About: index.md
+  - Scan Policies: policies.hbs.md
+  - Creating Scan Templates: create-scan-template.hbs.md
+  - Observability: observing.hbs.md
+  - Upgrading: upgrading.hbs.md
+  - Installation: install-scst-scan.hbs.md
+  - Install Snyk Scanner: install-snyk-integration.hbs.md
+  - Results: results.hbs.md
+  - Explanation: explanation.hbs.md
+  - Scan Resources: scan-crs.hbs.md
+  - Airgapped Environment: offline-airgap.hbs.md
+  - Samples:
+    - Private Source: samples/private-source.hbs.md
+    - Overview: samples/overview.hbs.md
+    - Private Image: samples/private-image.hbs.md
+    - Public Source Compliance: samples/public-source-compliance.hbs.md
+    - Public Image Compliance: samples/public-image-compliance.hbs.md
+    - Blob: samples/blob.hbs.md
+
+plugins:
+  - techdocs-core

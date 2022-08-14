@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: Learning Center System
+  name: learning-center
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  domain: tap
+  owner: platform-team

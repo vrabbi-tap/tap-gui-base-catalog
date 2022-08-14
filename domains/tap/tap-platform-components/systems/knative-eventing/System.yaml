@@ -1,8 +1,0 @@
-apiVersion: backstage.io/v1alpha1
-kind: System
-metadata:
-  description: Knative Eventing System
-  name: knative-eventing
-spec:
-  domain: tap
-  owner: platform-team

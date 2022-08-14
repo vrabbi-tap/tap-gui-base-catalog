@@ -1,0 +1,9 @@
+site_name: 'Contour system'
+
+nav:
+  - About: index.md
+  - Installation: install-cert-mgr.hbs.md
+
+
+plugins:
+  - techdocs-core

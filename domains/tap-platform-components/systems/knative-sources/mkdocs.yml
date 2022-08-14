@@ -1,0 +1,8 @@
+site_name: 'Knative Sources system'
+
+nav:
+  - About: index.md
+  - Installation: install-cnrt.hbs.md
+
+plugins:
+  - techdocs-core

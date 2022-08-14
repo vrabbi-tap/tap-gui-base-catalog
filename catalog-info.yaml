@@ -20,12 +20,102 @@ spec:
     - ./orgs/platform/org.yaml
     - ./orgs/platform/team.yaml
     - ./orgs/platform/users.yaml
-    - ./domains/tap-gui/domain.yaml
-    - ./domains/tap-gui/systems/tap-gui/system.yaml
-    - ./domains/tap-gui/systems/tap-gui/components/tap-gui/component.yaml
     - ./domains/cloud-apps/domain.yaml
     - ./domains/cloud-apps/systems/yelb/system.yaml
     - ./domains/cloud-apps/systems/yelb/components/redis-server/component.yaml
     - ./domains/cloud-apps/systems/yelb/components/yelb-appserver/component.yaml
     - ./domains/cloud-apps/systems/yelb/components/yelb-db/component.yaml
     - ./domains/cloud-apps/systems/yelb/components/yelb-ui/component.yaml
+    - ./domains/tap-platform-components/Domain.yaml
+    - ./domains/tap-platform-components/systems/metadata-store/System.yaml
+    - ./domains/tap-platform-components/systems/metadata-store/metadata-store-app/Component.yaml
+    - ./domains/tap-platform-components/systems/metadata-store/metadata-store-db/Component.yaml
+    - ./domains/tap-platform-components/systems/conventions/spring-boot-conventions/Component.yaml
+    - ./domains/tap-platform-components/systems/conventions/System.yaml
+    - ./domains/tap-platform-components/systems/conventions/application-live-view-conventions/Component.yaml
+    - ./domains/tap-platform-components/systems/app-sso/System.yaml
+    - ./domains/tap-platform-components/systems/app-sso/app-sso-operator/Component.yaml
+    - ./domains/tap-platform-components/systems/app-sso/app-sso-auth-server-redis/Component.yaml
+    - ./domains/tap-platform-components/systems/app-sso/app-sso-auth-server-apps/Component.yaml
+    - ./domains/tap-platform-components/systems/source-controller/System.yaml
+    - ./domains/tap-platform-components/systems/source-controller/flux-source-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/source-controller/tanzu-source-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/image-policy-webhook/System.yaml
+    - ./domains/tap-platform-components/systems/image-policy-webhook/image-policy-webhook-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/service-bindings-operator/service-bindings-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/service-bindings-operator/System.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-rabbitmq-broker-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/System.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-mt-broker-ingress/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-sugar-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-imc-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-mt-broker-filter/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-imc-dispatcher/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-mt-broker-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-eventing/knative-eventing-rabbitmq-broker-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/contour/System.yaml
+    - ./domains/tap-platform-components/systems/contour/contour-envoy-proxies/Component.yaml
+    - ./domains/tap-platform-components/systems/contour/contour-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-sources/System.yaml
+    - ./domains/tap-platform-components/systems/knative-sources/knative-sources-rabbitmq-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-sources/knative-sources-rabbitmq-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/learning-center/System.yaml
+    - ./domains/tap-platform-components/systems/learning-center/learning-center-portal/Component.yaml
+    - ./domains/tap-platform-components/systems/learning-center/learning-center-pre-pull/Component.yaml
+    - ./domains/tap-platform-components/systems/learning-center/learning-center-operator/Component.yaml
+    - ./domains/tap-platform-components/systems/tap-gui/System.yaml
+    - ./domains/tap-platform-components/systems/tap-gui/tap-gui/Component.yaml
+    - ./domains/tap-platform-components/systems/scanning-system/System.yaml
+    - ./domains/tap-platform-components/systems/scanning-system/scan-link-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/services-toolkit/services-toolkit-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/services-toolkit/System.yaml
+    - ./domains/tap-platform-components/systems/services-toolkit/resource-claims-api-server/Component.yaml
+    - ./domains/tap-platform-components/systems/application-accelerator/System.yaml
+    - ./domains/tap-platform-components/systems/application-accelerator/application-accelerator/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/smart-warmer-image-fetcher/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/dependency-updater/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/System.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/kpack-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/secret-syncer-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/stack-operator-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/cert-injection-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/build-pod-image-fetcher/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/smart-warmer-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/tanzu-build-service/kpack-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/application-live-view/application-live-view-connector/Component.yaml
+    - ./domains/tap-platform-components/systems/application-live-view/System.yaml
+    - ./domains/tap-platform-components/systems/application-live-view/application-live-view-server/Component.yaml
+    - ./domains/tap-platform-components/systems/tekton/tekton-pipelines-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/tekton/System.yaml
+    - ./domains/tap-platform-components/systems/tekton/tekton-pipelines-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-vmware-sources/System.yaml
+    - ./domains/tap-platform-components/systems/knative-vmware-sources/knative-vmware-sources/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/System.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-net-certmanager-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-domain-mapping/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-autoscaler/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-autoscaler-hpa/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-domain-mapping-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-net-certmanager-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-net-contour-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-serving/knative-serving-activator/Component.yaml
+    - ./domains/tap-platform-components/systems/tap-telemetry/System.yaml
+    - ./domains/tap-platform-components/systems/tap-telemetry/tap-telemetry-informer/Component.yaml
+    - ./domains/tap-platform-components/systems/cartographer/System.yaml
+    - ./domains/tap-platform-components/systems/cartographer/cartographer-conventions/Component.yaml
+    - ./domains/tap-platform-components/systems/cartographer/cartographer/Component.yaml
+    - ./domains/tap-platform-components/systems/cosign-policy-controller/System.yaml
+    - ./domains/tap-platform-components/systems/cosign-policy-controller/cosign-policy-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/cosign-policy-controller/cosign-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/cert-manager/cert-manager-controller/Component.yaml
+    - ./domains/tap-platform-components/systems/cert-manager/System.yaml
+    - ./domains/tap-platform-components/systems/cert-manager/cert-manager-ca-injector/Component.yaml
+    - ./domains/tap-platform-components/systems/cert-manager/cert-manager-webhook/Component.yaml
+    - ./domains/tap-platform-components/systems/api-portal/System.yaml
+    - ./domains/tap-platform-components/systems/api-portal/api-portal/Component.yaml
+    - ./domains/tap-platform-components/systems/knative-triggermesh/System.yaml
+    - ./domains/tap-platform-components/systems/knative-triggermesh/trigger-mesh-aws-event-sources/Component.yaml

@@ -1,0 +1,21 @@
+site_name: 'Metadata Store System'
+
+nav:
+  - About: index.md
+  - Deployment Details: deployment-details.hbs.md
+  - Security: security.hbs.md
+  - API Walkthrough: api-walkthrough.hbs.md
+  - Upgrading: upgrading.hbs.md
+  - Backups: backups.hbs.md
+  - Using RDS: use-aws-rds.hbs.md
+  - Multi Cluster - Ingress Configuration: ingress-multicluster.hbs.md
+  - Troubleshooting: troubleshooting.hbs.md
+  - Installation: install-scst-store.hbs.md
+  - Creating Access Tokens and Service Accounts: create-service-account-access-token.hbs.md
+  - Logs: logs.hbs.md
+  - Using Encryption And Connection: using-encryption-and-connection.hbs.md
+  - API: api.hbs.md
+  - Failover: failover.hbs.md
+
+plugins:
+  - techdocs-core

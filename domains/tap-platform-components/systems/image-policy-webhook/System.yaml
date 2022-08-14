@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  description: '[Deprecated] Tanzu Image Policy Webhook System'
+  name: image-policy-webhook
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  domain: tap
+  owner: platform-team

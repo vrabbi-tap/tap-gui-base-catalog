@@ -1,0 +1,20 @@
+site_name: 'Application Live View'
+
+nav:
+  - About: index.md
+  - Installation: install.hbs.md
+  - Troubleshooting: troubleshooting.hbs.md
+  - Polyglot: polyglot.hbs.md
+  - Architecture: architecture.hbs.md
+  - Uninstalling: uninstalling.hbs.md
+  - Configuring Apps:
+    - Configuring Actuator: configuring-apps/configuring-actuator.hbs.md
+    - Configuring App For Connector: configuring-apps/configuring-app-for-connector.hbs.md
+    - Convention Server: configuring-apps/convention-server.hbs.md
+    - Scaling Applications: configuring-apps/scaling-applications.hbs.md
+    - Spring Boot Enablement: configuring-apps/spring-boot-enablement.hbs.md
+    - Steeltoe Enablement: configuring-apps/steeltoe-enablement.hbs.md
+
+
+plugins:
+  - techdocs-core

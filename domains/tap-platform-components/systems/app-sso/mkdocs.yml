@@ -1,0 +1,9 @@
+site_name: 'Application SSO'
+
+nav:
+  - About: index.md
+  - Installation: install-appsso.hbs.md
+  - Getting Started: getting-started.hbs.md
+
+plugins:
+  - techdocs-core

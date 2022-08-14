@@ -1,0 +1,44 @@
+site_name: 'Learning Center System'
+
+nav:
+  - About: index.md
+  - Installation: install-cnrt.hbs.md
+  - Troubleshooting: troubleshoot-learning-center.hbs.md
+  - Runtime Environment:
+    - Workshop Request: runtime-environment/workshop-request.hbs.md
+    - Workshop Session: runtime-environment/workshop-session.hbs.md
+    - Workshop Environment: runtime-environment/workshop-environment.hbs.md
+    - System Profile: runtime-environment/system-profile.hbs.md
+    - Custom Resources: runtime-environment/custom-resources.hbs.md
+    - Training Portal: runtime-environment/training-portal.hbs.md
+    - Workshop Definition: runtime-environment/workshop-definition.hbs.md
+  - Portal REST API:
+    - Anonymous Access: portal-rest-api/anonymous-access.hbs.md
+    - Client Auth: portal-rest-api/client-authentication.hbs.md
+    - Session Management: portal-rest-api/session-management.hbs.md
+    - Workshops Catalog: portal-rest-api/workshops-catalog.hbs.md
+  - Workshop Content:
+    - Workshop Runtime: workshop-content/workshop-runtime.hbs.md
+    - Workshop Config: workshop-content/workshop-config.hbs.md
+    - About: workshop-content/about.hbs.md
+    - Working On Content: workshop-content/working-on-content.hbs.md
+    - Building An Image: workshop-content/building-an-image.hbs.md
+    - Workshop Instructions: workshop-content/workshop-instructions.hbs.md
+    - Workshop Images: workshop-content/workshop-images.hbs.md
+    - Presenter Slides: workshop-content/presenter-slides.hbs.md
+  - Airgapped Environment: airgapped-environment.hbs.md
+  - Local Install Guides:
+    - About: local-install-guides/about.hbs.md
+    - Kind: local-install-guides/deploying-to-kind.hbs.md
+    - Minikube: local-install-guides/deploying-to-minikube.hbs.md
+  - Installation: install-learning-center.hbs.md
+  - About Workshops: about-learning-center/about-workshops.hbs.md
+  - Getting Started:
+    - : getting-started/workshops.hbs.md
+    - : getting-started/learning-center-operator.hbs.md
+    - : getting-started/deleting-learning-center.hbs.md
+    - : getting-started/about.hbs.md
+    - : getting-started/training-portal.hbs.md
+
+plugins:
+  - techdocs-core

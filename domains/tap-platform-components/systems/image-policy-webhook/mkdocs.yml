@@ -1,0 +1,11 @@
+site_name: 'DEPRECATED - Tanzu Image Policy Webhook system'
+
+nav:
+  - About: index.md
+  - Installation: install-scst-sign.hbs.md
+  - Migration: migrate.hbs.md
+  - Configuration: configuring.hbs.md
+  - Logs: logs.hbs.md
+
+plugins:
+  - techdocs-core

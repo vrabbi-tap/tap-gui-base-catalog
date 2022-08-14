@@ -1,0 +1,10 @@
+site_name: 'Cosign Policy Controller system'
+
+nav:
+  - About: index.md
+  - Installation: install-scst-policy.hbs.md
+  - Migration: migration.hbs.md
+  - Configuration: configuration.hbs.md
+
+plugins:
+  - techdocs-core

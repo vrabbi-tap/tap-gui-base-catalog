@@ -1,0 +1,8 @@
+site_name: 'Services Toolkit System'
+
+nav:
+  - About: index.md
+  - Installation: install-services-toolkit.hbs.md
+
+plugins:
+  - techdocs-core

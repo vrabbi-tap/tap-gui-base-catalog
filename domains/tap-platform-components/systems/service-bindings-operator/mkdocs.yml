@@ -1,0 +1,10 @@
+site_name: 'Service Bindings Operator System'
+
+nav:
+  - About: index.md
+  - Installation: install-service-bindings.hbs.md
+  - Resources: resources.hbs.md
+  - Troubleshooting: troubleshooting.hbs.md
+
+plugins:
+  - techdocs-core

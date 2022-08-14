@@ -1,0 +1,8 @@
+site_name: 'Tekton Pipelines system'
+
+nav:
+  - About: index.md
+  - Installation: install-tekton.hbs.md
+
+plugins:
+  - techdocs-core

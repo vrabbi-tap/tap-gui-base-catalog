@@ -23,7 +23,6 @@ nav:
     - About: workshop-content/about.hbs.md
     - Working On Content: workshop-content/working-on-content.hbs.md
     - Building An Image: workshop-content/building-an-image.hbs.md
-    - Workshop Instructions: workshop-content/workshop-instructions.hbs.md
     - Workshop Images: workshop-content/workshop-images.hbs.md
     - Presenter Slides: workshop-content/presenter-slides.hbs.md
   - Airgapped Environment: airgapped-environment.hbs.md

@@ -687,20 +687,6 @@ The banner of the action block in this example displays "Prefix: Title", with th
 
 >**Note:** The description is always displayed as pre-formatted text within the rendered page.
 
-## <a id="escape-code-block-content"></a>Escaping of code block content
-
-Because the [Liquid](https://www.npmjs.com/package/liquidjs) template engine is applied to workshop content, you must escape content in code blocks that conflict with the syntactic elements of the Liquid template engine. To escape such elements, you can suspend processing by the template engine for that section of workshop content to ensure it is rendered correctly. Do this by using a Liquid \`{% raw %}...{% endraw %}\` block.
-
-~~~
-{% raw %}
-```execute
-echo "Execute command."
-```
-{% endraw %}
-~~~
-
-This has the side effect of preventing interpolation of data variables, so restrict it to only the required scope.
-
 ## <a id="interpolate-data-vars"></a>Interpolation of data variables
 
 When creating page content, you can reference a number of predefined data variables. The values of the data variables are substituted into the page when rendered in the user's browser.

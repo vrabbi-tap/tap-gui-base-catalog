@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
-  name: tanzu-application-platform
+  name: tap
   description: Everything related to the Tanzu Application Platform
   links:
     - url: https://www.vrabbi.cloud/blog/categories/tap

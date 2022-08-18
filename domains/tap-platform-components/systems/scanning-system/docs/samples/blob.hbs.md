@@ -62,7 +62,7 @@ Before deploying, set up a watch in another terminal to see things process:
 watch kubectl get scantemplates,scanpolicies,sourcescans,imagescans,pods,jobs
 ```
 
-For more information, see [Observing and Troubleshooting](../observing.md).
+For more information, see [Observing and Troubleshooting](../observing.hbs.md).
 
 ## <a id="deploy-resources"></a>Deploy the resources
 
@@ -80,7 +80,7 @@ kubectl describe sourcescan public-blob-source-example
 
 Notice the `Status.Conditions` includes a `Reason: JobFinished` and `Message: The scan job finished`.
 
-For more information, see [Viewing and Understanding Scan Status Conditions](../results.md).
+For more information, see [Viewing and Understanding Scan Status Conditions](../results.hbs.md).
 
 ## <a id="clean-up"></a>Clean up
 
@@ -90,4 +90,4 @@ kubectl delete -f public-blob-source-example.yaml
 
 ## <a id="view-vuln-reports"></a>View vulnerability reports
 
-After completing the scans, [query the Supply Chain Security Tools - Store](../../cli-plugins/insight/query-data.md) to view your vulnerability results.
+After completing the scans, [query the Supply Chain Security Tools - Store](../../cli-plugins/insight/query-data.hbs.md) to view your vulnerability results.

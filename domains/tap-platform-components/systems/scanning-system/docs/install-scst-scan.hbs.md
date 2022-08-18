@@ -5,22 +5,22 @@ from the Tanzu Application Platform package repository.
 
 >**Note:** Use the instructions on this page if you do not want to use a profile to install packages.
 The full profile includes Supply Chain Security Tools - Scan.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 ## <a id='scst-scan-prereqs'></a> Prerequisites
 
 Before installing Supply Chain Security Tools - Scan:
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
-- Install [Supply Chain Security Tools - Store](../scst-store/install-scst-store.md) for scan results to persist. The integration with Supply Chain Security Tools - Store can be handled in:
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
+- Install [Supply Chain Security Tools - Store](../scst-store/install-scst-store.hbs.md) for scan results to persist. The integration with Supply Chain Security Tools - Store can be handled in:
   - **Single Cluster:** The Supply Chain Security Tools - Store is present in the same cluster where Supply Chain Security Tools - Scan and the `ScanTemplates` will be present.
   - **Multi-Cluster:** The Supply Chain Security Tools - Store is present in a different cluster (e.g.: view cluster) where the Supply Chain Security Tools - Scan and `ScanTemplates` will be present.
   - **Integration Disabled:** The Supply Chain Security Tools - Scan deployment doesn't need to communicate with Supply Chain Security Tools - Store. 
 
-    For usage instructions, see [Using the Supply Chain Security Tools - Store](../scst-store/overview.md).
+    For usage instructions, see [Using the Supply Chain Security Tools - Store](../scst-store/overview.hbs.md).
 
 - Install the Tanzu Insight CLI plug-in to query the Supply Chain Security Tools - Store for CVE results.
-  See [Install the Tanzu Insight CLI plug-in](../cli-plugins/insight/cli-installation.md).
+  See [Install the Tanzu Insight CLI plug-in](../cli-plugins/insight/cli-installation.hbs.md).
 
 ## <a id='install-scst-scan'></a> Install
 

@@ -136,4 +136,4 @@ You can choose from a list of actuator endpoints and parse through the raw actua
 You might run into cases where a workload running on your cluster does not show up in the
 Application Live View overview, or the detail pages do not load any information while running, or
 other similar issues.
-For more information, see [Troubleshooting](../../app-live-view/troubleshooting.md).
+For more information, see [Troubleshooting](../../app-live-view/troubleshooting.hbs.md).

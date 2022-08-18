@@ -14,7 +14,7 @@ If you are not authenticated, the system prompts you for your OIDC credentials.
 Remote clusters that are not restricted by authorization are made visible by using the
 general service account of Tanzu Application Platform GUI. The visibility is not restricted for users.
 For more information about how to set up unrestricted remote cluster visibility, see
-[Viewing resources on multiple clusters in Tanzu Application Platform GUI](../cluster-view-setup.md).
+[Viewing resources on multiple clusters in Tanzu Application Platform GUI](../cluster-view-setup.hbs.md).
 
 When you access **Runtime Resources**, Tanzu Application Platform GUI queries all Kubernetes
 namespaces for runtime resources that have a matching `kubernetes-label-selector`. This usually

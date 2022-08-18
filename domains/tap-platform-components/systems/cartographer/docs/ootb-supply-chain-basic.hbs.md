@@ -217,13 +217,13 @@ Depending on what you are aiming to achieve, you can set different flags.
 To know more about those (including details about different features
 of the supply chains), see the following sections:
 
-- [Building from source](building-from-source.md), for more information about
+- [Building from source](building-from-source.hbs.md), for more information about
   different ways of creating a workload where the application is built from
   source code.
 
-- [Using a prebuilt image](pre-built-image.md), for more information about how to
+- [Using a prebuilt image](pre-built-image.hbs.md), for more information about how to
   leverage prebuilt images in the supply chains.
 
-- [GitOps vs RegistryOps](gitops-vs-regops.md), for a description of the
+- [GitOps vs RegistryOps](gitops-vs-regops.hbs.md), for a description of the
   different ways of propagating the deployment configuration through external
   systems (Git repositories and image registries).

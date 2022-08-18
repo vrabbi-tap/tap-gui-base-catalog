@@ -8,11 +8,11 @@
 
 ### Cause
 
-When there are no `convention servers` ([ClusterPodConvention](reference/cluster-pod-convention.md)) deployed in the cluster or none of the existing convention servers applied any conventions, the `PodIntent` is not being mutated.
+When there are no `convention servers` ([ClusterPodConvention](reference/cluster-pod-convention.hbs.md)) deployed in the cluster or none of the existing convention servers applied any conventions, the `PodIntent` is not being mutated.
 
 ### Solution
 
-Deploy a `convention server` ([ClusterPodConvention](reference/cluster-pod-convention.md)) in the cluster.
+Deploy a `convention server` ([ClusterPodConvention](reference/cluster-pod-convention.hbs.md)) in the cluster.
 
 
 ## <a id="wrong-certificates-config"></a>Server with wrong certificates configured
@@ -28,11 +28,11 @@ Deploy a `convention server` ([ClusterPodConvention](reference/cluster-pod-conve
 
 ### Cause
 
-`convention server` ([ClusterPodConvention](reference/cluster-pod-convention.md)) is configured with wrong certificates. The `convention-controller` cannot figure out the *CA Bundle* to perform the request to the *server*.
+`convention server` ([ClusterPodConvention](reference/cluster-pod-convention.hbs.md)) is configured with wrong certificates. The `convention-controller` cannot figure out the *CA Bundle* to perform the request to the *server*.
 
 ### Solution
 
-Ensure that the `convention server` ([ClusterPodConvention](reference/cluster-pod-convention.md)) is configured with the correct certificates. To do so, verify the value of annotation `conventions.carto.run/inject-ca-from` which must be set to the used *Certificate*.
+Ensure that the `convention server` ([ClusterPodConvention](reference/cluster-pod-convention.hbs.md)) is configured with the correct certificates. To do so, verify the value of annotation `conventions.carto.run/inject-ca-from` which must be set to the used *Certificate*.
 
 > **Note:** Do not set annotation `conventions.carto.run/inject-ca-from` if no certificate is used.
 

@@ -9,15 +9,15 @@ associated with their workloads.
 
 Do one of the following actions to access the Runtime Resources Visibility plug-in:
 
-- [Install the Tanzu Application Platform Full or View profile](../../install-intro.md)
-- [Install Tanzu Application Platform without using a profile](../../install-intro.md) and then install
-[Tanzu Application Platform GUI separately](../install-tap-gui.md).
+- [Install the Tanzu Application Platform Full or View profile](../../install-intro.hbs.md)
+- [Install Tanzu Application Platform without using a profile](../../install-intro.hbs.md) and then install
+[Tanzu Application Platform GUI separately](../install-tap-gui.hbs.md).
 
 ## <a id="Visualize-app"></a> Visualize Workloads on Tanzu Application Platform GUI
 
 In order to view your applications on Tanzu Application Platform GUI, use the following steps:
 
-1. [Deploy your first application on the Tanzu Application Platform](../../getting-started/deploy-first-app.md)
+1. [Deploy your first application on the Tanzu Application Platform](../../getting-started/deploy-first-app.hbs.md)
 1. [Add your application to Tanzu Application Platform GUI Software Catalog](../../getting-started/deploy-first-app.html#add-app-to-gui-cat)
 
 ## <a id="nav-rr-vis-screen"></a> Navigate to the **Runtime Resources Visibility** screen
@@ -168,7 +168,7 @@ Kubernetes manages these resource units by using a binary base, which is explain
 ## <a id="pod-details"></a>Navigating to Application Live View
 
 To view additional information about your running applications, see the
-[Application Live View](app-live-view-springboot.md) section in the **Pod Details** page.
+[Application Live View](app-live-view-springboot.hbs.md) section in the **Pod Details** page.
 
 ![Screenshot of Tanzu Java web app runtime resource detail page](images/runtime-resources-pod-details.png)
 

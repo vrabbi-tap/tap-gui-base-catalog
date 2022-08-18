@@ -80,12 +80,12 @@ the namespace has the objects that you configured in the other supply chain setu
 - **rolebinding**: Grant to the identity the necessary roles
   for creating the resources prescribed by the supply chain.
 
-  For more information on the preceding objects, see [Out of the Box Supply Chain Basic](ootb-supply-chain-basic.md).
+  For more information on the preceding objects, see [Out of the Box Supply Chain Basic](ootb-supply-chain-basic.hbs.md).
 
 - **Tekton pipeline**: A pipeline runs whenever the supply chain hits the stage
   of testing the source code.
 
-  For more information, see [Out of the Box Supply Chain Testing](ootb-supply-chain-testing.md).
+  For more information, see [Out of the Box Supply Chain Testing](ootb-supply-chain-testing.hbs.md).
 
 And the new ones, that you create here:
 
@@ -168,7 +168,7 @@ spec:
     }
 ```
 
-See [Writing Policy Templates](../scst-scan/policies.md) for more details.
+See [Writing Policy Templates](../scst-scan/policies.hbs.md) for more details.
 
 
 #### <a id="scan-template"></a> ScanTemplate
@@ -328,4 +328,4 @@ Create workload:
 
 ## <a id="scan-image-using-snyk"></a> Scan Image using Snyk
 
-[Supply Chain Security Tools - Scan](../scst-scan/install-scst-scan.md) includes an additional integration for running an image scan using Snyk. For information on how to install this integration and how to modify the supply chain template, see [Install Snyk scanner](../scst-scan/install-snyk-integration.md).
+[Supply Chain Security Tools - Scan](../scst-scan/install-scst-scan.md) includes an additional integration for running an image scan using Snyk. For information on how to install this integration and how to modify the supply chain template, see [Install Snyk scanner](../scst-scan/install-snyk-integration.hbs.md).

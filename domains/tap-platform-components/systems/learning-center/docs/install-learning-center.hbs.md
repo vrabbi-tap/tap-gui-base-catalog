@@ -5,17 +5,17 @@ from the Tanzu Application Platform package repository.
 
 >**Note:** Use the instructions on this page if you do not want to use the full profile to install packages.
 Only the full profile includes Learning Center.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 To install Tanzu Learning Center, see the following sections.
 
-For general information about Learning Center, see [Learning Center](about.md). For information about deploying Learning Center operator, see [Learning Center operator](getting-started/learning-center-operator.md).
+For general information about Learning Center, see [Learning Center](about.md). For information about deploying Learning Center operator, see [Learning Center operator](getting-started/learning-center-operator.hbs.md).
 
 ## <a id='prereqs'></a>Prerequisites
 
 Before installing Learning Center:
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
 
 - The cluster must have an ingress router configured. If you have installed the Tanzu Application Platform package through the full profile or light profile, it already deploys a contour ingress controller.
 

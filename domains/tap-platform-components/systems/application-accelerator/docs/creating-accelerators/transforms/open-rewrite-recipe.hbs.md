@@ -22,8 +22,8 @@ options:
 
 The following example applies the [ChangePackage](https://docs.openrewrite.org/reference/recipes/java/changepackage)
 Recipe to a set of Java files in the `com.acme` package and moves them to the value
-of `#companyPkg`. This is more powerful than using [RewritePath](rewrite-path.hbs.md)
-and [ReplaceText](replace-text.hbs.md), as it reads the syntax of files and
+of `#companyPkg`. This is more powerful than using [RewritePath](rewrite-path.hbs.hbs.md)
+and [ReplaceText](replace-text.hbs.hbs.md), as it reads the syntax of files and
 correctly deals with imports, fully vs. non-fully qualified names, and so on.
 
 ```

@@ -126,4 +126,4 @@ Here, the workshop content is overlaid on top of the standard workshop base imag
 
 ## Next steps
 
-- Learn about configuration options for the workshop.yaml custom resource definitions (CRD) in [Workshop resource](../runtime-environment/workshop-definition.md).
+- Learn about configuration options for the workshop.yaml custom resource definitions (CRD) in [Workshop resource](../runtime-environment/workshop-definition.hbs.md).

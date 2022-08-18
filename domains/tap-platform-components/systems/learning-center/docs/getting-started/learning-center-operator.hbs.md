@@ -3,7 +3,7 @@
 Before deploying workshops, install a Kubernetes operator for Learning Center.
 The operator manages the setup of the environment for each workshop and deploys instances of a workshop for each person.
 
-For basic information about installing the operator, see [Install Learning Center](../install-learning-center.md).
+For basic information about installing the operator, see [Install Learning Center](../install-learning-center.hbs.md).
 
 ## <a id="install-set-up"></a>Installing and setting up Learning Center operator
 

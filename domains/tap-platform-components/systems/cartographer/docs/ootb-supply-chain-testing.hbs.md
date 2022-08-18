@@ -72,18 +72,18 @@ the namespace has the following objects in it (including the ones marked with
   pulling the container images built by the supply chain and the
   installation of Tanzu Application Platform.
 
-  For more information, see [Out of the Box Supply Chain Basic](ootb-supply-chain-basic.md).
+  For more information, see [Out of the Box Supply Chain Basic](ootb-supply-chain-basic.hbs.md).
 
 - **service account**: The identity to be used for any
   interaction with the Kubernetes API made by the supply chain
 
-  For more information, see [Out of the Box Supply Chain Basic](ootb-supply-chain-basic.md).
+  For more information, see [Out of the Box Supply Chain Basic](ootb-supply-chain-basic.hbs.md).
 
 
 - **rolebinding**: Grant to the identity the necessary roles
   for creating the resources prescribed by the supply chain.
 
-  For more information, see [Out of the Box Supply Chain Basic](ootb-supply-chain-basic.md).
+  For more information, see [Out of the Box Supply Chain Basic](ootb-supply-chain-basic.hbs.md).
 
 - **Tekton pipeline** (_new_): A pipeline runs whenever the supply chain
   hits the stage of testing the source code.

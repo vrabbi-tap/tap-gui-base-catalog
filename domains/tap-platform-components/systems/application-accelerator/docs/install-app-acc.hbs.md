@@ -5,19 +5,19 @@ from the Tanzu Application Platform package repository.
 
 >**Note:** Use the instructions on this page if you do not want to use a profile to install packages.
 Both the full and light profiles include Application Accelerator.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 ## <a id='app-acc-prereqs'></a>Prerequisites
 
 Before installing Application Accelerator:
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
 
 - Install Flux SourceController on the cluster.
-See [Install cert-manager, Contour, and FluxCD Source Controller](../cert-mgr-contour-fcd/install-cert-mgr.md).
+See [Install cert-manager, Contour, and FluxCD Source Controller](../cert-mgr-contour-fcd/install-cert-mgr.hbs.md).
 
 -  Install Source Controller on the cluster.
-See [Install Source Controller](../source-controller/install-source-controller.md).
+See [Install Source Controller](../source-controller/install-source-controller.hbs.md).
 
 ## <a id='app-acc-config'></a> Configure properties and resource usage
 

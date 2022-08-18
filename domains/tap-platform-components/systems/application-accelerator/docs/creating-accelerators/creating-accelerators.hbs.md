@@ -6,7 +6,7 @@ This topic describes how to create an accelerator in Tanzu Application Platform 
 
 The following prerequisites are required to create an accelerator:
 
-  - Application Accelerator is installed. For information about installing Application Accelerator, see [Installing Application Accelerator for VMware Tanzu](../install-app-acc.md)
+  - Application Accelerator is installed. For information about installing Application Accelerator, see [Installing Application Accelerator for VMware Tanzu](../install-app-acc.hbs.md)
   - You can access Tanzu Application Platform GUI from a browser. For more information, see the "Tanzu Application Platform GUI" section in the most recent release for [Tanzu Application Platform documentation](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/index.html)
   - kubectl v1.20 and later. The Kubernetes command line tool (kubectl) is installed and authenticated with admin rights for your target cluster.
 
@@ -82,7 +82,7 @@ An alternative to using the Tanzu CLI is to create a separate manifest file and 
 
 ## <a id="using-accelerator-fragments"></a>Using accelerator fragments
 
-Accelerator fragments are reusable accelerator components that can provide options, files or transforms. They may be imported to accelerators using an `import` entry and the transforms from the fragment may be referenced in an `InvokeFragment` transform in the accelerator that is declaring the import. For additional details see [InvokeFragment transform](transforms/invoke-fragment.md).
+Accelerator fragments are reusable accelerator components that can provide options, files or transforms. They may be imported to accelerators using an `import` entry and the transforms from the fragment may be referenced in an `InvokeFragment` transform in the accelerator that is declaring the import. For additional details see [InvokeFragment transform](transforms/invoke-fragment.hbs.md).
 
 The accelerator samples include three fragments - `java-version`, `tap-initialize`, and `live-update`. See the [sample-accelerators/fragments](https://github.com/sample-accelerators/fragments/tree/tap-1.2) Git repository for the content of these fragments.
 
@@ -202,13 +202,13 @@ engine:
 
 The earlier acelerator imports the `java-version` which, as seen earlier, provides an option to select the Java version to use for the project. It then instructs the engine to invoke the transforms provided in the fragment that updates the Java version used in `pom.xml` or `build.gradle` files from the accelerator.
 
-For more detail on the use of fragments, see [InvokeFragment transform](transforms/invoke-fragment.md).
+For more detail on the use of fragments, see [InvokeFragment transform](transforms/invoke-fragment.hbs.md).
 
 ## <a id="Next-steps"></a>Next steps
 
 Learn how to:
 
-- Write an [accelerator.yaml](accelerator-yaml.md).
-- Configure accelerators with [Accelerator Custom Resources](accelerator-crd.md).
-- Manipulate files using [Transforms](transform-intro.md).
-- Use [SpEL in the accelerator.yaml file](spel-samples.md).
+- Write an [accelerator.yaml](accelerator-yaml.hbs.md).
+- Configure accelerators with [Accelerator Custom Resources](accelerator-crd.hbs.md).
+- Manipulate files using [Transforms](transform-intro.hbs.md).
+- Use [SpEL in the accelerator.yaml file](spel-samples.hbs.md).

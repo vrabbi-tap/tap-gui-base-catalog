@@ -1,14 +1,14 @@
 # Install Supply Chain Security Tools - Sign
 
->**Caution:** This component is being deprecated in favor of [Supply Chain Security Tools - Policy Controller](../scst-policy/overview.md).
->To migrate from Supply Chain Security Tools - Sign to Supply Chain Security Tools - Policy Controller, please follow these [steps](./migrate.md)
+>**Caution:** This component is being deprecated in favor of [Supply Chain Security Tools - Policy Controller](../scst-policy/overview.hbs.md).
+>To migrate from Supply Chain Security Tools - Sign to Supply Chain Security Tools - Policy Controller, please follow these [steps](./migrate.hbs.md)
 
 Supply Chain Security Tools - Sign is released as part of Tanzu Application
 Platform's full, iterate and run profiles. Follow the instructions below to manually install this component.
 
 ## <a id='scst-sign-prereqs'></a> Prerequisites
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
 - A container image registry that supports TLS connections. This component does not work with insecure registries.
 - During configuration for this component, you are asked to provide a cosign public key to use to
 validate signed images. An example cosign public key is provided that can validate an image from the
@@ -18,7 +18,7 @@ generate your own keys and sign an image.
 
 >**Caution:** This component rejects pods if the webhook fails or is incorrectly configured.
 >If the webhook is preventing the cluster from functioning,
->see [Supply Chain Security Tools - Sign Known Issues](../release-notes.md)
+>see [Supply Chain Security Tools - Sign Known Issues](../release-notes.hbs.md)
 > in the Tanzu Application Platform release notes for recovery steps.
 
 ## <a id='install-scst-sign'></a> Install
@@ -245,7 +245,7 @@ To install Supply Chain Security Tools - Sign:
    After you run the commands above your signing package will be running.
 
    >**Note:** This component requires extra configuration steps to work properly. See
-   >[Configuring Supply Chain Security Tools - Sign](configuring.md)
+   >[Configuring Supply Chain Security Tools - Sign](configuring.hbs.md)
    >for instructions on how to apply the required configuration.
 
 
@@ -255,8 +255,8 @@ The WebHook deployed by Supply Chain Security Tools - Sign requires extra input
 from the operator before it starts enforcing policies.
 
 To configure your installed component properly, see
-[Configuring Supply Chains Security Tools - Sign](configuring.md).
+[Configuring Supply Chains Security Tools - Sign](configuring.hbs.md).
 
 ## <a id="known-issues"></a> Known issues
 
-See [Supply Chain Security Tools - Sign Known Issues](../release-notes.md).
+See [Supply Chain Security Tools - Sign Known Issues](../release-notes.hbs.md).

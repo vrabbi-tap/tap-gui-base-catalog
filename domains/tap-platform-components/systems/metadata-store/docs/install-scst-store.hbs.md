@@ -3,15 +3,15 @@
 This document describes how to install Supply Chain Security Tools - Store
 from the Tanzu Application Platform package repository.
 
->**Note:** VMware recommends installing Supply Chain Security Tools - Store by using Tanzu Application Platform Profiles.  See [About Tanzu Application Platform components and profiles](../about-package-profiles.md) and [Installing the Tanzu Application Platform Package and Profiles](../install.md).  Use the following instructions if you do not want to use a profile to install the Supply Chain Security Tools - Store package.
+>**Note:** VMware recommends installing Supply Chain Security Tools - Store by using Tanzu Application Platform Profiles.  See [About Tanzu Application Platform components and profiles](../about-package-profiles.md) and [Installing the Tanzu Application Platform Package and Profiles](../install.hbs.md).  Use the following instructions if you do not want to use a profile to install the Supply Chain Security Tools - Store package.
 
 ## <a id='prereqs'></a>Prerequisites
 
 Before installing Supply Chain Security Tools - Store:
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
 - Install cert-manager on the cluster. For more information, see [Install cert-manager](../cert-mgr-contour-fcd/install-cert-mgr.md#install-cert-mgr).
-- See [Deployment Details and Configuration](deployment-details.md) to review what resources will be deployed. For more information, see the [overview](overview.md).
+- See [Deployment Details and Configuration](deployment-details.md) to review what resources will be deployed. For more information, see the [overview](overview.hbs.md).
 
 ## <a id='install'></a>Install
 
@@ -100,7 +100,7 @@ and you want to use `ClusterIP`, then create a `metadata-store-values.yaml` and 
     See [Deployment details and configuration](deployment-details.md#configuration) for
     more information about configuration options.
 
-    See [Ingress and multicluster support](ingress-multicluster.md) for more information about ingress and custom domain name support.
+    See [Ingress and multicluster support](ingress-multicluster.hbs.md) for more information about ingress and custom domain name support.
 
 1. Install the package by running:
 

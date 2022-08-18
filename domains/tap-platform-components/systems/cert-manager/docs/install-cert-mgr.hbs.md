@@ -5,13 +5,13 @@ from the Tanzu Application Platform package repository.
 
 >**Note:** Use the instructions on this page if you do not want to use a profile to install packages.
 Both the full and light profiles include cert-manager, contour, and FluxCD Source Controller.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 ## <a id='cnr-prereqs'></a>Prerequisites
 
 Before installing cert-manager, Contour, and FluxCD Source Controller:
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
 
 ## <a id='install-cert-mgr'></a>Install cert-manager
 

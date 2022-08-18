@@ -2,7 +2,7 @@
 
 The Learning Center workshop dashboard comprises a set of workshop instructions on the left-hand side and a series of
 tabbed views on the right-hand side. For workshops requiring commands to be run, one or more terminal shells are provided.
-More detailed information about Workshops including creating your own: [Creating Learning Center Workshops](../workshop-content/about.md)
+More detailed information about Workshops including creating your own: [Creating Learning Center Workshops](../workshop-content/about.hbs.md)
 
 ![Screenshot of dashboard terminal](images/dashboard-terminal.png)
 

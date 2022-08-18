@@ -23,7 +23,7 @@ image registry.
 
 >**Note:** For more information about providing source code either from a
 local directory or Git repository,
-see [Building from Source](building-from-source.md).  
+see [Building from Source](building-from-source.hbs.md).  
 
 ## <a id="gitops"></a>GitOps
 

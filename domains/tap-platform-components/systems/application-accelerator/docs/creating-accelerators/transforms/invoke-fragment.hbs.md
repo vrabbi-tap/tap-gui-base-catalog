@@ -40,7 +40,7 @@ manner, a fragment defining an option `myOption` is defining an option named
 
 To override a value, or if an imported option has been exposed under a different name,
 or not at all, you can use a `let` construct when using `InvokeFragment`.
-This behaves as the [`Let`](let.hbs.md) transform: for the duration of the fragment
+This behaves as the [`Let`](let.hbs.hbs.md) transform: for the duration of the fragment
 invocation, the variables defined by `let` now have their newly defined values.
 Outside the scope of the invocation, the regular model applies.
 
@@ -176,5 +176,5 @@ using a filter on `*.xml` files.
 
 ## See also
 
-- [Let](let.hbs.md)
-- [RewritePath](rewrite-path.hbs.md)   
+- [Let](let.hbs.hbs.md)
+- [RewritePath](rewrite-path.hbs.hbs.md)   

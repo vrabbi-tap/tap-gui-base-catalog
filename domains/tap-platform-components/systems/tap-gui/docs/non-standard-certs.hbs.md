@@ -14,7 +14,7 @@ Tanzu Application Platform GUI pod's environment variable as `NODE_TLS_REJECT_UN
 When the value equals `0`, certificate validation is deactivated for TLS connections.
 
 To do this, use the `package_overlays` key in the Tanzu Application Platform values file.
-For instructions, see [Customizing Package Installation](../customize-package-installation.md).
+For instructions, see [Customizing Package Installation](../customize-package-installation.hbs.md).
 
 The following is an example overlay to deactivate TLS:
 
@@ -80,7 +80,7 @@ following example `secret.yaml`:
 
 1. To set the environment variable `NODE_EXTRA_CA_CERTS`, use the `package_overlays` key in the
 Tanzu Application Platform values file.
-For instructions, see [Customizing Package Installation](../customize-package-installation.md).
+For instructions, see [Customizing Package Installation](../customize-package-installation.hbs.md).
 
     The following is an example overlay to add a custom CA.
     It assumes that your Tanzu Application Platform GUI instance is deployed in the namespace `tap-gui`.

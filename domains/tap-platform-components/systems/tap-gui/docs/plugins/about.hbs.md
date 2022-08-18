@@ -8,8 +8,8 @@ you must install the Tanzu Application Platform component.
 
 Tanzu Application Platform includes the following GUI plug-ins:
 
-- [Runtime Resources Visibility](runtime-resource-visibility.md)
-- [Application Live View](app-live-view.md)
-- [Application Accelerator](application-accelerator.md)
-- [API Documentation](api-docs.md)
-- [Supply Chain Choreographer](scc-tap-gui.md)
+- [Runtime Resources Visibility](runtime-resource-visibility.hbs.md)
+- [Application Live View](app-live-view.hbs.md)
+- [Application Accelerator](application-accelerator.hbs.md)
+- [API Documentation](api-docs.hbs.md)
+- [Supply Chain Choreographer](scc-tap-gui.hbs.md)

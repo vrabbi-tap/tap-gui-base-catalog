@@ -21,7 +21,7 @@ This document provides details about each approach.
 
 >**Note:** To provide a prebuilt container image instead of
 building the application from the beginning by using the supply chain, see
-[Using a prebuilt image](pre-built-image.md).
+[Using a prebuilt image](pre-built-image.hbs.md).
 
 ## <a id="git-source"></a>Git source
 

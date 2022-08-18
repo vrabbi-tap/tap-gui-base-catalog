@@ -19,4 +19,4 @@ Where:
 
 The convention controller will forward BOMs to the convention servers that it can discover from known sources, including:
 
-+ [*CNB-SBOM*](https://github.com/buildpacks/rfcs/blob/main/text/0095-sbom.md)
++ [*CNB-SBOM*](https://github.com/buildpacks/rfcs/blob/main/text/0095-sbom.hbs.md)

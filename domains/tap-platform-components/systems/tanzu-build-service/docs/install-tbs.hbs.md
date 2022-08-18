@@ -6,7 +6,7 @@ package repository by using the Tanzu CLI.
 Use this topic if you do not want to use a Tanzu Application Platform profile that includes
 Tanzu Build Service.
 The Full, Iterate, and Build profiles include Tanzu Build Service.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 >**Note:** The following procedure might not include some configurations required for your environment.
 >For advanced information about installing Tanzu Build Service, see the
@@ -17,7 +17,7 @@ For more information about profiles, see [About Tanzu Application Platform compo
 Before installing Tanzu Build Service:
 
 - Complete all prerequisites to install Tanzu Application Platform.
-For more information, see [Prerequisites](../prerequisites.md).
+For more information, see [Prerequisites](../prerequisites.hbs.md).
 
 - You must have access to a Docker registry that Tanzu Build Service can use to create builder images.
 Approximately 10&nbsp;GB of registry space is required when using the `full` dependencies.
@@ -290,7 +290,7 @@ To install `full` Tanzu Build Service dependencies:
 
 >**Important:** The automatic updates feature is being deprecated.
 >The recommended way to patch dependencies is by upgrading Tanzu Application Platform
->to the latest patch version. For upgrade instructions, see [Upgrading Tanzu Application Platform](../upgrading.md).
+>to the latest patch version. For upgrade instructions, see [Upgrading Tanzu Application Platform](../upgrading.hbs.md).
 
 You can configure Tanzu Build Service to update dependencies in the background as they are released.
 This enables workloads to keep up to date automatically.

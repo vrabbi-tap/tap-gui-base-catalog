@@ -2,7 +2,7 @@
 
 This document describes how to upgrade Supply Chain Security Tools - Scan from the Tanzu Application Platform package repository.
 
-You can perform a fresh install of Supply Chain Security Tools - Scan by following the instructions in [Install Supply Chain Security Tools - Scan](install-scst-scan.md).
+You can perform a fresh install of Supply Chain Security Tools - Scan by following the instructions in [Install Supply Chain Security Tools - Scan](install-scst-scan.hbs.md).
 
 This topic includes instructions for:
 
@@ -18,13 +18,13 @@ This topic includes instructions for:
 
 Before you upgrade Supply Chain Security Tools - Scan:
 
-* Upgrade the Tanzu Application Platform by following the instructions in [Upgrading Tanzu Application Platform](../upgrading.md)
+* Upgrade the Tanzu Application Platform by following the instructions in [Upgrading Tanzu Application Platform](../upgrading.hbs.md)
 
 ## <a id="general-upgrades"></a> General Upgrades for Supply Chain Security Tools - Scan
 
 When you're upgrading to any version of Supply Chain Security Tools - Scan these are some factors to accomplish this task successfully:
 
-1. Inspect the [Release Notes](../release-notes.md) for the version you're upgrading to. There you can find any breaking changes for the installation.
+1. Inspect the [Release Notes](../release-notes.hbs.md) for the version you're upgrading to. There you can find any breaking changes for the installation.
 1. Get the values schema for the package version you're upgrading to by running:
 
   ```console
@@ -105,9 +105,9 @@ If you're upgrading from a previous version of Supply Chain Security Tools - Sca
           importFromNamespace: "<SECRET-NAMESPACE>" # The namespace where the connection secrets were created (if multi-cluster)
     ```
 
-  For more insights on how to install Grype, see [Install Supply Chain Security Tools - Scan (Grype Scanner)](install-scst-scan.md#install-grype).
+  For more insights on how to install Grype, see [Install Supply Chain Security Tools - Scan (Grype Scanner)](install-scst-scan.hbs.md#install-grype).
 
-  Note: If a mix of Grype templates (`<v1.2.0` and `≥v1.2.0`) are used, both `scanning` and `grype` need to configure the parameters, and the secret needs to export to both scan-link-system and the dev namespace (either by exporting to "*" or by defining multiple secrets and exports. (similarly if grype is installed to multiple namespaces there must be corresponding exports). See [Install Supply Chain Security Tools - Scan (Grype Scanner)](install-scst-scan.md#install-grype)
+  Note: If a mix of Grype templates (`<v1.2.0` and `≥v1.2.0`) are used, both `scanning` and `grype` need to configure the parameters, and the secret needs to export to both scan-link-system and the dev namespace (either by exporting to "*" or by defining multiple secrets and exports. (similarly if grype is installed to multiple namespaces there must be corresponding exports). See [Install Supply Chain Security Tools - Scan (Grype Scanner)](install-scst-scan.hbs.md#install-grype)
 
   Now update Tanzu Application Platform to apply the changes:
 
@@ -117,7 +117,7 @@ If you're upgrading from a previous version of Supply Chain Security Tools - Sca
 
 3. Update the `ScanPolicy` to include the latest structure changes for `v1.2.0`.
 
-  To update to the latest valid Rego File in the `ScanPolicy`, [Enforce compliance policy using Open Policy Agent](policies.md). `v1.2.0` introduced some breaking changes in the Rego File structure used for the `ScanPolicies`, See the [Release Notes](../release-notes.md#scst-scan-changes).
+  To update to the latest valid Rego File in the `ScanPolicy`, [Enforce compliance policy using Open Policy Agent](policies.hbs.md). `v1.2.0` introduced some breaking changes in the Rego File structure used for the `ScanPolicies`, See the [Release Notes](../release-notes.hbs.md#scst-scan-changes).
 
 4. Verify the upgrade.
 

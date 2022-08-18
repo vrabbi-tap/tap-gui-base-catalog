@@ -114,8 +114,8 @@ In this scenario, the custom resource types that come into play are:
 
 Learn more about:
 
-- [Workshops](workshop-content/about.md)
-- [Getting started with Learning Center](getting-started/about.md)
-- [Installing Learning Center](../learning-center/install-learning-center.md)
-- [Local install guides](local-install-guides/about.md)
-- [Air-gapped environment requirements](../learning-center/airgapped-environment.md)
+- [Workshops](workshop-content/about.hbs.md)
+- [Getting started with Learning Center](getting-started/about.hbs.md)
+- [Installing Learning Center](../learning-center/install-learning-center.hbs.md)
+- [Local install guides](local-install-guides/about.hbs.md)
+- [Air-gapped environment requirements](../learning-center/airgapped-environment.hbs.md)

@@ -6,7 +6,7 @@ resource that builds a container image from source that is signed with
 [Cosign](https://github.com/sigstore/cosign).
 
 This topic builds upon the steps in the
-[kpack tutorial](https://github.com/pivotal/kpack/blob/main/docs/tutorial.md).
+[kpack tutorial](https://github.com/pivotal/kpack/blob/main/docs/tutorial.hbs.md).
 
 ## <a id="prereqs"></a> Prerequisites
 
@@ -14,7 +14,7 @@ Before you can configure Tanzu Build Service to sign your image builds, you must
 
 - Install Tanzu Build Service. The Full, Iterate, and Build profiles include Tanzu Build Service by default.
 If you have not installed Tanzu Application Platform with one of these profiles,
-see [Installing Tanzu Build Service](install-tbs.md).
+see [Installing Tanzu Build Service](install-tbs.hbs.md).
 
 - Install Cosign. For instructions, see the [Cosign documentation](https://docs.sigstore.dev/cosign/installation/).
 
@@ -141,7 +141,7 @@ so that it includes the Cosign keypair Secret created earlier.
       - Google Cloud Registry has the form `"gcr.io/my-project/my-repo"`
 
     >**Note:** If you are using Out of the Box Supply Chains, modify the respective `ClusterImageTemplate`
-    >to enable signing in your supply chain. For more information, see [Authoring supply chains](../scc/authoring-supply-chains.md).
+    >to enable signing in your supply chain. For more information, see [Authoring supply chains](../scc/authoring-supply-chains.hbs.md).
     >
     >Referencing the Service Account using the `service_account` value when installing the
     >Out of the Box Supply Chain is not recommended.
@@ -187,4 +187,4 @@ so that it includes the Cosign keypair Secret created earlier.
 
 1. Configure Supply Chain Security Tools for VMware Tanzu - Policy Controller
 to ensure that only signed images are allowed in your cluster.
-For more information, see the [Supply Chain Security Tools for VMware Tanzu - Policy Controller](../scst-policy/overview.md) documentation.
+For more information, see the [Supply Chain Security Tools for VMware Tanzu - Policy Controller](../scst-policy/overview.hbs.md) documentation.

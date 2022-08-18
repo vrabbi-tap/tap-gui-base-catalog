@@ -3,7 +3,7 @@
 This topic describes how to create an accelerator.yaml file.
 By including an `accelerator.yaml` file in your Accelerator repository, you can declare input options that users fill in using a form in the UI.
 Those option values control processing by the template engine before it returns the zipped output files.
-For more information, see the [Sample accelerator](accelerator-yaml-sample.md).
+For more information, see the [Sample accelerator](accelerator-yaml-sample.hbs.md).
 
 When there is no `accelerator.yaml`, the repository still works as an accelerator but
 the files are passed unmodified to users.
@@ -58,7 +58,7 @@ The following option properties are used by both the UI and the engine.
 
 - **name**:
   Each option must have a unique, camelCase name. The option value entered by a user is made
-  available as a [SPeL](spel-samples.md) variable name. For example, `#deploymentType`.
+  available as a [SPeL](spel-samples.hbs.md) variable name. For example, `#deploymentType`.
 
 - **dataType**:
   Data types that work with the UI are `string`, `boolean`, `number`, and arrays of those,
@@ -219,7 +219,7 @@ The notation also provides the composition operators `merge` and `chain`, which 
 you to create more complex transforms by composing simpler transforms together.
 
 The following is an example of what is possible.
-To learn the notation, see [Introduction to transforms](transform-intro.md).
+To learn the notation, see [Introduction to transforms](transform-intro.hbs.md).
 
 ### <a id="engine-example"></a> Engine example
 

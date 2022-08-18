@@ -538,7 +538,7 @@ manipulating the files as is. This isn't a problem until the files must be writt
 to disk or a ZIP file. If a conflict is still present at that time, an error is raised.
 
 If your accelerator produces such conflicts, they must be resolved
-before writing files to disk. To this end, VMware provides the [UniquePath](transforms/unique-path.md)
+before writing files to disk. To this end, VMware provides the [UniquePath](transforms/unique-path.hbs.md)
 transform. This transform allows you to specify what to do when more than one file has the same
 path. For example:
 
@@ -553,9 +553,9 @@ path. For example:
 
 The result of the above transform is that all `.md` files are gathered up and concatenated into a
 single file at path `docs/README.md`. Another possible resolution strategy is to keep
-only the contents of one of the files. See [Conflict Resolution](transforms/conflict-resolution.md).
+only the contents of one of the files. See [Conflict Resolution](transforms/conflict-resolution.hbs.md).
 
-[Combo](transforms/combo.md) transform also comes with some convenient built-in support for
+[Combo](transforms/combo.hbs.md) transform also comes with some convenient built-in support for
 conflict resolution. It automatically selects the `UseLast` strategy if none is explicitly
 supplied. So in practice, you rarely, if ever, need to explicitly
 specify a conflict resolution strategy.
@@ -611,5 +611,5 @@ in the accelerator root.
 
 To learn more, read the following more detailed documents:
 
-- An exhaustive [Reference](transforms/index.md) of all built-in transform types
-- A sample, commented [accelerator.yaml](accelerator-yaml-sample.md) to learn from a concrete example
+- An exhaustive [Reference](transforms/index.hbs.md) of all built-in transform types
+- A sample, commented [accelerator.yaml](accelerator-yaml-sample.hbs.md) to learn from a concrete example

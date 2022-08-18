@@ -1,6 +1,6 @@
 # API walkthrough
 
-This topic includes an example API call. For information about using the Supply Chain Security Tools - Store API, see [full API documentation](api.md).
+This topic includes an example API call. For information about using the Supply Chain Security Tools - Store API, see [full API documentation](api.hbs.md).
 
 ## <a id='curltopost'></a>Using CURL to POST an image report
 
@@ -12,7 +12,7 @@ The following procedure explains how to use CURL to POST an image report.
     kubectl port-forward service/metadata-store-app 8443:8443 -n metadata-store
     ```
 
-2. Retrieve the `metadata-store-read-write-client` access token. Ensure the Service Account is [created](create-service-account-access-token.md). Run:
+2. Retrieve the `metadata-store-read-write-client` access token. Ensure the Service Account is [created](create-service-account-access-token.hbs.md). Run:
 
     ```console
     export METADATA_STORE_ACCESS_TOKEN=$(kubectl get secrets -n metadata-store -o jsonpath="{.items[?(@.metadata.annotations['kubernetes\.io/service-account\.name']=='metadata-store-read-write-client')].data.token}" | base64 -d)

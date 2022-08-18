@@ -125,4 +125,4 @@ spec:
 EOF
 ```
 
-Install Supply Chain Security Tools - Scan with the YAML file sample configuration for the build-profile specified in [Build profile](../multicluster/reference/tap-values-build-sample.md).
+Install Supply Chain Security Tools - Scan with the YAML file sample configuration for the build-profile specified in [Build profile](../multicluster/reference/tap-values-build-sample.hbs.md).

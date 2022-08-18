@@ -8,7 +8,7 @@ This topic describes Supply Chain Choreographer in Tanzu Application Platform GU
 The Supply Chain Choreographer (SCC) plug-in enables you to visualize the execution of a workload
 by using any of the installed Out-of-the-Box supply chains.
 For more information about the Out-of-the-Box supply chains that are available in
-Tanzu Application Platform, see [Supply Chain Choreographer for Tanzu](../../scc/about.md).
+Tanzu Application Platform, see [Supply Chain Choreographer for Tanzu](../../scc/about.hbs.md).
 
 
 ## <a id="prerequisites"></a> Prerequisites
@@ -18,13 +18,13 @@ To use Supply Chain Choreographer in Tanzu Application Platform GUI you must hav
 * One of the following installed on your cluster:
   * [Tanzu Application Platform Full profile](../../install.md#install-profile)
   * [Tanzu Application Platform View profile](../../install.md#install-profile)
-  * [Tanzu Application Platform GUI package](../install-tap-gui.md) and Metadata Store package
+  * [Tanzu Application Platform GUI package](../install-tap-gui.hbs.md) and Metadata Store package
 * One of the following installed on the target cluster where you want to deploy your workload:
   * [Tanzu Application Platform Run profile](../../install.md#install-profile)
   * [Tanzu Application Platform Full profile](../../install.md#install-profile)
 
 For more information, see
-[Overview of multicluster Tanzu Application Platform](../../multicluster/about.md)
+[Overview of multicluster Tanzu Application Platform](../../multicluster/about.hbs.md)
 
 
 ## <a id="scan"></a> Enable CVE scan results
@@ -50,7 +50,7 @@ To enable CVE scan results:
     Where `ACCESS-TOKEN` is the token you obtained after creating a read-only service account.
 
 ## <a id="view-approvals"></a> Enable View Approvals 
-To enable the supply chain graph to show **View Approvals**, follow the instructions on setting up GitOps and Pull Request in the [GitOps vs. RegistryOps](../../scc/gitops-vs-regops.md) topic.
+To enable the supply chain graph to show **View Approvals**, follow the instructions on setting up GitOps and Pull Request in the [GitOps vs. RegistryOps](../../scc/gitops-vs-regops.hbs.md) topic.
 
 ## <a id="sc-visibility"></a> Supply Chain Visibility
 
@@ -97,7 +97,7 @@ In the example below, the merge request is approved, leading to a **Pull Config*
 
 ## <a id="sc-view-scan-results"></a> View Vulnerability Scan Results
 
-Vulnerability source scans and image scans for workload builds can be viewed by clicking on the Source Scan stage or Image Scan stage.  The data is provided by the [Supply Chain Security Tools - Store](../../scst-store/overview.md).
+Vulnerability source scans and image scans for workload builds can be viewed by clicking on the Source Scan stage or Image Scan stage.  The data is provided by the [Supply Chain Security Tools - Store](../../scst-store/overview.hbs.md).
 
 The vulnerabilities (i.e., CVEs) displayed represent any vulnerability associated to a package/version found in the source code or image, including vulnerabilities from past scans.  In other words, the vulnerability scan data represents the scan that just occurred, plus any other vulnerabilities related to the packages found in that scan.  
 

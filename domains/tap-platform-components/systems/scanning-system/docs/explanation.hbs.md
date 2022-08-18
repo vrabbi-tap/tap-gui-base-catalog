@@ -41,10 +41,10 @@ If `targetSourceSshSecret` is set in `tap-values.yaml`, `private-source-scan-tem
 The private scan templates reference secrets created using the Docker server and credentials you
 provided, which means they are ready to use immediately.
 
-For more information about the `SourceScan` and `ImageScan` CRDs and how to customize your own, refer to [Configuring Code Repositories and Image Artifacts to be Scanned](scan-crs.md).
+For more information about the `SourceScan` and `ImageScan` CRDs and how to customize your own, refer to [Configuring Code Repositories and Image Artifacts to be Scanned](scan-crs.hbs.md).
 
 ## <a id="policy-enforcement-vuln"></a>About policy enforcement around vulnerabilities found
 
 The Scan Controller supports policy enforcement by using an Open Policy Agent (OPA) engine. ScanPolicy (`scanpolicies.scanning.apps.tanzu.vmware.com`) allows scan results to be validated for company policy compliance and can prevent source code from being built or images from being deployed.
 
-For more information, see [Configuring Policy Enforcement using Open Policy Agent (OPA)](policies.md).
+For more information, see [Configuring Policy Enforcement using Open Policy Agent (OPA)](policies.hbs.md).

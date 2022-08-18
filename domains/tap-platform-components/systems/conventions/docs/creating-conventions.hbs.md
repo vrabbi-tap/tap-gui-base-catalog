@@ -9,7 +9,7 @@ into containerized workloads with a URL.
 The Supply Chain Choreographer for Tanzu manages this transformation.
 For more information, see [Supply Chain Choreographer](../scc/about.html).
 
-[Cartographer Conventions](about.md) is a key component of the supply chain
+[Cartographer Conventions](about.hbs.md) is a key component of the supply chain
 compositions the choreographer calls into action.
 Cartographer Conventions enables people in operational roles to efficiently apply
 their expertise. They can specify the runtime best practices, policies, and
@@ -33,7 +33,7 @@ The convention server is the component that applies a convention already defined
 Each convention server can host one or more conventions.
 The application of each convention by a convention server are controlled conditionally.
 The conditional criteria governing the application of a convention is customizable and are based
-on the evaluation of a custom Kubernetes resource called [PodIntent](reference/pod-intent.md).
+on the evaluation of a custom Kubernetes resource called [PodIntent](reference/pod-intent.hbs.md).
 PodIntent is the vehicle by which Cartographer Conventions as a whole delivers its value.
 
 A PodIntent is created, or updated if already existing, when a workload is run by using a Tanzu Application Platform supply chain.
@@ -82,8 +82,8 @@ With this high-level understanding of Cartographer Conventions components, you c
 The following prerequisites must be met before a convention is developed and deployed:
 
 + The Kubernetes command line tool (kubectl) CLI is installed. For more information, see the [Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/).
-+ Tanzu Application Platform prerequisites are installed. For more information, see [Prerequisites](../prerequisites.md)
-+ Tanzu Application Platform components are installed. For more information, see the [Installing the Tanzu CLI](../install-tanzu-cli.md).
++ Tanzu Application Platform prerequisites are installed. For more information, see [Prerequisites](../prerequisites.hbs.md)
++ Tanzu Application Platform components are installed. For more information, see the [Installing the Tanzu CLI](../install-tanzu-cli.hbs.md).
 + The default supply chain is installed. Download Supply Chain Security Tools for VMware Tanzu from [Tanzu Network](https://network.tanzu.vmware.com/products/supply-chain-security-tools/).
 + Your kubeconfig context is set to the Tanzu Application Platform-enabled cluster:
 
@@ -98,9 +98,9 @@ The following prerequisites must be met before a convention is developed and dep
 The `server.go` file contains the configuration for the server and the logic the server applies when a workload matches the defined criteria.
 For example, adding a Prometheus sidecar to web applications, or adding a `workload-type=spring-boot` label to any workload that has metadata, indicating it is a Spring Boot app.  
 
->**Note:** For this example, the package `model` defines [resource types](./reference/convention-resources.md).
+>**Note:** For this example, the package `model` defines [resource types](./reference/convention-resources.hbs.md).
 
-1. <a id='convention-1'></a> The example `server.go` configures the `ConventionHandler` to ingest the webhook requests from the convention controller. See [PodConventionContext](./reference/pod-convention-context.md). Here the handler must only deal with the existing [`PodTemplateSpec`](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-template-v1/#PodTemplateSpec) and [`ImageConfig`](./reference/image-config.md).
+1. <a id='convention-1'></a> The example `server.go` configures the `ConventionHandler` to ingest the webhook requests from the convention controller. See [PodConventionContext](./reference/pod-convention-context.hbs.md). Here the handler must only deal with the existing [`PodTemplateSpec`](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-template-v1/#PodTemplateSpec) and [`ImageConfig`](./reference/image-config.hbs.md).
 
    ```go
    ...
@@ -117,7 +117,7 @@ For example, adding a Prometheus sidecar to web applications, or adding a `workl
      Where:
 
      + `template` is the predefined `PodTemplateSpec` that the convention edits. For more information about `PodTemplateSpec`, see the [Kubernetes documentation](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-template-v1/#PodTemplateSpec).
-     + `images` are the [`ImageConfig`](./reference/image-config.md) used as reference to make decisions in the conventions. In this example, the type was created within the `model` package.
+     + `images` are the [`ImageConfig`](./reference/image-config.hbs.md) used as reference to make decisions in the conventions. In this example, the type was created within the `model` package.
 
 1. <a id='server-2'></a>The example `server.go` also configures the convention server to listen for requests:
 
@@ -154,7 +154,7 @@ For example, adding a Prometheus sidecar to web applications, or adding a `workl
 
 >**Note:** The *Server Handler*, `func ConventionHandler(...)`, and the configure or start web server, `func NewConventionServer(...)`, is defined in the convention controller in the `webhook` package, but you can use a custom one.
 
-1. Creating the *Server Handler*, which handles the request from the convention controller with the [PodConventionContext](./reference/pod-convention-context.md) serialized to JSON.
+1. Creating the *Server Handler*, which handles the request from the convention controller with the [PodConventionContext](./reference/pod-convention-context.hbs.md) serialized to JSON.
 
     ```go
     package webhook
@@ -339,7 +339,7 @@ When using environment variables to define whether the convention is applicable,
 
 ### <a id='match-crit-img-metadata'></a>Matching criteria by image metadata
 
-For each image contained within the PodTemplateSpec, the convention controller fetches the OCI image metadata and known [`bill of materials (BOMs)`](reference/bom.md), providing it to the convention server as [`ImageConfig`](./reference/image-config.md). This metadata is introspected to make decisions about how to configure the PodTemplateSpec.
+For each image contained within the PodTemplateSpec, the convention controller fetches the OCI image metadata and known [`bill of materials (BOMs)`](reference/bom.md), providing it to the convention server as [`ImageConfig`](./reference/image-config.hbs.md). This metadata is introspected to make decisions about how to configure the PodTemplateSpec.
 
 ## <a id='install'></a> Configure and install the convention server
 
@@ -482,7 +482,7 @@ The `server.yaml` defines the Kubernetes components that enable the convention s
     ...
     ```
 
-6. <a id='install-convention'></a>The [`ClusterPodConvention`](./reference/cluster-pod-convention.md) adds the convention to the cluster to make it available for the Convention Controller:
+6. <a id='install-convention'></a>The [`ClusterPodConvention`](./reference/cluster-pod-convention.hbs.md) adds the convention to the cluster to make it available for the Convention Controller:
     >**Note:** The `annotations` block is only needed if you use a self-signed certificate. Otherwise, check the [cert-manager documentation](https://cert-manager.io/docs/).
 
     ```yaml

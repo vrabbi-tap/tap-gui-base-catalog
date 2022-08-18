@@ -5,7 +5,7 @@ from the Tanzu Application Platform package repository.
 
 >**Note:** Use the instructions on this page if you do not want to use a profile to install packages.
 Both the full and light profiles include Out of the Box Templates.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 The Out of the Box Templates package is used by all the Out of the Box Supply
 Chains to provide the templates that are used by the Supply Chains to create
@@ -16,9 +16,9 @@ cluster.
 
 Before installing Out of the Box Templates:
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
-- Install cartographer. For more information, see [Install Supply Chain Choreographer](install-scc.md).
-- Install [Tekton Pipelines](../tekton/install-tekton.md).
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
+- Install cartographer. For more information, see [Install Supply Chain Choreographer](install-scc.hbs.md).
+- Install [Tekton Pipelines](../tekton/install-tekton.hbs.md).
 
 ## <a id='inst-ootb-templ-proc'></a> Install
 

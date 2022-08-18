@@ -39,7 +39,7 @@ spec:
 For more information about the structure of the definition file for an API entity, see the
 [Backstage Kind: API documentation](https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api).
 For more information about the API documentation plug-in, see the
-[Backstage API documentation](https://github.com/backstage/backstage/blob/master/plugins/api-docs/README.md)
+[Backstage API documentation](https://github.com/backstage/backstage/blob/master/plugins/api-docs/README.hbs.md)
 in GitHub.
 
 

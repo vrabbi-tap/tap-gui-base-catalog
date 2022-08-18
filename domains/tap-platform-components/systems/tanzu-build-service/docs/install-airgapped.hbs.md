@@ -6,7 +6,7 @@ and registry that are air-gapped from external traffic.
 Use this topic if you do not want to use a Tanzu Application Platform profile that includes
 Tanzu Build Service.
 The Full, Iterate, and Build profiles include Tanzu Build Service.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 To install Tanzu Build Service on an air-gapped environment, you must:
 
@@ -18,7 +18,7 @@ To install Tanzu Build Service on an air-gapped environment, you must:
 Before installing Tanzu Build Service:
 
 - Complete all prerequisites to install Tanzu Application Platform.
-For more information, see [Prerequisites](../prerequisites.md).
+For more information, see [Prerequisites](../prerequisites.hbs.md).
 
 - You must have access to a Docker registry that Tanzu Build Service can use to create builder images.
 Approximately 10&nbsp;GB of registry space is required when using the `full` dependencies.

@@ -33,9 +33,9 @@ Some variables are made available to the model by the engine, including:
 * `artifactId` is a built-in value derived from the `projectName` passed in from 
   the UI with spaces replaced by "_". If that value is empty, it is set to `app`.
 * `files` is a helper object that currently exposes the `contentsOf(<path>)` method. 
-  For more information, see [ReplaceText](transforms/replace-text.md).
+  For more information, see [ReplaceText](transforms/replace-text.hbs.md).
 * `camel2Kebab` and other variations of the form `xxx2Yyyy` are a series of
-  helper functions for dealing with changing case of words. For more information, see [ReplaceText](transforms/replace-text.md).
+  helper functions for dealing with changing case of words. For more information, see [ReplaceText](transforms/replace-text.hbs.md).
 
 ## <a id="conditionals"></a>Conditionals
 

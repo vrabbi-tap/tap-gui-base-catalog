@@ -5,7 +5,7 @@ from the Tanzu Application Platform package repository.
 
 >**Note:** Use the instructions on this page if you do not want to use a profile to install packages.
 Both the full and light profiles include Out of the Box Supply Chain Basic.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 The Out of the Box Supply Chain Basic package provides the most basic
 ClusterSupplyChain that brings an application from source code to a deployed
@@ -15,8 +15,8 @@ instance of it running in a Kubernetes environment.
 
 Fulfill the following prerequisites:
 
-- Fulfill the [prerequisites](../prerequisites.md) for installing Tanzu Application Platform.
-- [Install Supply Chain Choreographer](install-scc.md).
+- Fulfill the [prerequisites](../prerequisites.hbs.md) for installing Tanzu Application Platform.
+- [Install Supply Chain Choreographer](install-scc.hbs.md).
 
 ## <a id='inst-ootb-sc-basic'></a> Install
 

@@ -5,9 +5,9 @@ whose path matches at least one of the configured `patterns`.
 The contents of files, and any of their other characteristics, are unaffected.
 
 `Include` is a basic building block seldom used as is, which
-makes sense if composed inside a [Chain](chain.md) or a [Merge](merge.md).
+makes sense if composed inside a [Chain](chain.md) or a [Merge](merge.hbs.md).
 It is often more convenient to leverage the shorthand notation offered
-by [Combo](combo.md).
+by [Combo](combo.hbs.hbs.md).
 
 ## <a id="syntax-ref"></a>Syntax reference
 
@@ -29,5 +29,5 @@ transformations:
 
 ## See also
 
-* [Exclude](exclude.hbs.md)
-* [Combo](combo.hbs.md)   
+* [Exclude](exclude.hbs.hbs.md)
+* [Combo](combo.hbs.hbs.md)   

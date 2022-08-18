@@ -11,15 +11,15 @@ Application Live View installs three packages for `full`, `light`, and `iterate`
 - For the `build` profile, Application Live View installs Application Live View Conventions package (`conventions.appliveview.tanzu.vmware.com`). This installs the Application Live View Convention Service in `app-live-view-conventions` namespace.
 
 >**Note:** Use the instructions on this page if you do not want to use a profile to install packages.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 
 ## <a id='prereqs'></a>Prerequisites
 
 Before installing Application Live View, complete all prerequisites to install Tanzu Application Platform.
-For more information, see [Prerequisites](../prerequisites.md).
+For more information, see [Prerequisites](../prerequisites.hbs.md).
 
-In addition, install Cartographer Conventions which is bundled with Supply Chain Choreographer as of the v0.4.0 release. To install, see [Installing Supply Chain Choreographer](../scc/install-scc.md). For more information, see [Cartographer Conventions](../cartographer-conventions/about.md). 
+In addition, install Cartographer Conventions which is bundled with Supply Chain Choreographer as of the v0.4.0 release. To install, see [Installing Supply Chain Choreographer](../scc/install-scc.md). For more information, see [Cartographer Conventions](../cartographer-conventions/about.hbs.md). 
 
 ## <a id='install-app-live-view'></a> Install Application Live View
 
@@ -334,4 +334,4 @@ To install Application Live View Conventions:
 
 The Application Live View UI plug-in is part of Tanzu Application Platform GUI.
 To access the Application Live View UI,
-see [Application Live View in Tanzu Application Platform GUI](../tap-gui/plugins/app-live-view.md).
+see [Application Live View in Tanzu Application Platform GUI](../tap-gui/plugins/app-live-view.hbs.md).

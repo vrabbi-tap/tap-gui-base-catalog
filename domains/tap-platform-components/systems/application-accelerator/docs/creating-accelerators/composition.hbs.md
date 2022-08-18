@@ -20,7 +20,7 @@ A **Fragment** looks exactly the same as an accelerator:
 The only differences reside in the way they are declared to the system — they are
 filed as **Fragments** custom resources — and the way they deal with files: because
 they deal with their own files and files from the accelerator using them,
-they typically use dedicated conflict resolution [strategies](transforms/conflict-resolution.md)
+they typically use dedicated conflict resolution [strategies](transforms/conflict-resolution.hbs.md)
 (more on that later).
 
 Fragments may be thought of as "functions" in programming languages: once defined and
@@ -103,14 +103,14 @@ As with any other transform, it may be used anywhere in the `engine` tree and
 receives files that are "visible" at that point. Those files, alongside those
 that make up the fragment are made available to the fragment logic. If the fragment
 wants to choose between two versions of a file for a path, two new
-conflict resolution [strategies](transforms/conflict-resolution.md) are available: `FavorForeign` and `FavorOwn`.
+conflict resolution [strategies](transforms/conflict-resolution.hbs.md) are available: `FavorForeign` and `FavorOwn`.
 
 The behavior of the `InvokeFragment` Transform is very straight forward: after having validated
 options that the fragment expects (and maybe after having set default values for
 options that support one), it executes the whole Transform of the fragment _as if
 it was written in place of `InvokeFragment`_.
 
-See the `InvokeFragment` [reference page](transforms/invoke-fragment.md) for more explanations, examples, and configuration options. This topic now focuses on additional features of the `imports` section that are seldom used but still
+See the `InvokeFragment` [reference page](transforms/invoke-fragment.hbs.md) for more explanations, examples, and configuration options. This topic now focuses on additional features of the `imports` section that are seldom used but still
 available to cover more complex use-cases.
 
 ## <a id="back-to-imports"></a> Back to the `imports` section

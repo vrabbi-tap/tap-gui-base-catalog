@@ -5,14 +5,14 @@ Platform's Full, Iterate and Run profiles. Use the instructions in this topic to
 
 ## <a id='scst-policy-prereqs'></a> Prerequisites
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
 
 - A container image registry that supports TLS connections.
 >**Note:** This component does not work with not secure registries.
 
 - If Supply Chain Security Tools - Sign is installed with an existing running
 Image Policy Webhook `ClusterImagePolicy`, see
-[Migration From Supply Chain Security Tools - Sign](migration.md).
+[Migration From Supply Chain Security Tools - Sign](migration.hbs.md).
 
 - During configuration for this component, you are asked to provide a cosign public key to use to
 validate signed images. The Policy Controller only supports ECDSA public keys.

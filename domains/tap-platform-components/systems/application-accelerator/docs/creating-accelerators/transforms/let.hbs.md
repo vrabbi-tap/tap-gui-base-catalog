@@ -48,4 +48,4 @@ list but not the other way around.
 
 ## See also
 
-- [Combo](combo.hbs.md) provides a way to declare a `Let` scope and other transforms in a short syntax.
+- [Combo](combo.hbs.hbs.md) provides a way to declare a `Let` scope and other transforms in a short syntax.

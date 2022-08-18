@@ -4,15 +4,15 @@ The convention controller is open to extension. These resources are typically co
 
 ## <a id="conv-service-resources"></a>Convention Service Resources
 
-There are several [resources](convention-resources.md) involved in the application of conventions to workloads.
+There are several [resources](convention-resources.hbs.md) involved in the application of conventions to workloads.
 
 ### <a id="api-structure"></a>API Structure
 
-The [`PodConventionContext`](pod-convention-context.md) API object in the `webhooks.conventions.carto.run` API group is the structure used for both request and response from the convention server.
+The [`PodConventionContext`](pod-convention-context.hbs.md) API object in the `webhooks.conventions.carto.run` API group is the structure used for both request and response from the convention server.
 
 ### <a id="template-status"></a>Template Status
 
-The enriched `PodTemplateSpec` is reflected at [`.status.template`](pod-convention-context-status.md). For more information about `PodTemplateSpec`, see the [Kubernetes documentation](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-template-v1/#PodTemplateSpec).
+The enriched `PodTemplateSpec` is reflected at [`.status.template`](pod-convention-context-status.hbs.md). For more information about `PodTemplateSpec`, see the [Kubernetes documentation](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-template-v1/#PodTemplateSpec).
 
 ## <a id="chain-multi-conventions"></a>Chaining Multiple Conventions
 
@@ -51,10 +51,10 @@ For example:
 
 ## <a id="references"></a> References
 
-+ [ImageConfig](image-config.md)
-+ [PodConventionContextSpec](pod-convention-context-spec.md)
-+ [PodConventionContextStatus](pod-convention-context-status.md)
-+ [PodConventionContext](pod-convention-context.md)
-+ [Cluster Pod Convention](cluster-pod-convention.md)
-+ [PodIntent](pod-intent.md)
-+ [BOM](bom.md)
++ [ImageConfig](image-config.hbs.md)
++ [PodConventionContextSpec](pod-convention-context-spec.hbs.md)
++ [PodConventionContextStatus](pod-convention-context-status.hbs.md)
++ [PodConventionContext](pod-convention-context.hbs.md)
++ [Cluster Pod Convention](cluster-pod-convention.hbs.md)
++ [PodIntent](pod-intent.hbs.md)
++ [BOM](bom.hbs.md)

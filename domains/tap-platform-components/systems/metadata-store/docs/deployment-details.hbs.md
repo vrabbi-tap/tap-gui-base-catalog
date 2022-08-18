@@ -26,7 +26,7 @@ The default database included with the deployment is meant to get users started 
 
 #### <a id='awsrds-postresdata'></a>Using AWS RDS postgres database
 
-Users can also configure the deployment to use their own RDS database instead of the default. See [AWS RDS Postgres Configuration](use-aws-rds.md).
+Users can also configure the deployment to use their own RDS database instead of the default. See [AWS RDS Postgres Configuration](use-aws-rds.hbs.md).
 
 #### <a id='cust-data-pass'></a>Custom database password
 
@@ -62,13 +62,13 @@ If the `ingress_enabled` property is set to `"true"`, VMware recommends setting 
 By default, a service account with read-write privileges to the metadata store app is installed.
 This service account is a cluster-wide account that uses ClusterRole.
 If you don't want the service account and role, set the `add_default_rw_service_account` property to `"false"`.
-To create a custom service account, see [Configure access tokens](create-service-account-access-token.md).
+To create a custom service account, see [Configure access tokens](create-service-account-access-token.hbs.md).
 
-The store creates a read-only cluster role, which is bound to a service account by using `ClusterRoleBinding`. To create service accounts to bind to this cluster role, see [Configure access tokens](create-service-account-access-token.md).
+The store creates a read-only cluster role, which is bound to a service account by using `ClusterRoleBinding`. To create service accounts to bind to this cluster role, see [Configure access tokens](create-service-account-access-token.hbs.md).
 
 ## <a id='export-cert'></a>Exporting certificates
 
-Supply Chain Security Tools - Store creates a [Secret Export](https://github.com/vmware-tanzu/carvel-secretgen-controller/blob/develop/docs/secret-export.md) for exporting certificates to `Supply Chain Security Tools - Scan` to securely post scan results. These certificates are exported to the namespace where `Supply Chain Security Tools - Scan` is installed.
+Supply Chain Security Tools - Store creates a [Secret Export](https://github.com/vmware-tanzu/carvel-secretgen-controller/blob/develop/docs/secret-export.hbs.md) for exporting certificates to `Supply Chain Security Tools - Scan` to securely post scan results. These certificates are exported to the namespace where `Supply Chain Security Tools - Scan` is installed.
 
 ## <a id='ingress'></a>Ingress support
 
@@ -80,4 +80,4 @@ ingress_domain: "example.com"
 app_service_type: "ClusterIP" # recommended setting
 ```
 
-An HTTPProxy object is then installed with `metadata-store.example.com` as the fully qualified domain name. See [Ingress and multicluster support](ingress-multicluster.md).
+An HTTPProxy object is then installed with `metadata-store.example.com` as the fully qualified domain name. See [Ingress and multicluster support](ingress-multicluster.hbs.md).

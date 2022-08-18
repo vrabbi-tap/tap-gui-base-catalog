@@ -5,13 +5,13 @@ from the Tanzu Application Platform package repository.
 
 >**Note:** Use the instructions on this page if you do not want to use a profile to install packages.
 Both the full and light profiles include Cloud Native Runtimes.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 ## <a id='cnr-prereqs'></a>Prerequisites
 
 Before installing Cloud Native Runtimes:
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
 - Ensure you have an internal or external Contour namespace on a cluster with v1.19.1 of Contour installed when you configure `reuse_crds:true`.
 
 >**Note:** Cloud Native Runtimes fails to install when configured with `reuse_crds:true` and no internal or external Contour namespace provided on a cluster with Contour installed at a version other than v1.19.1.
@@ -139,7 +139,7 @@ To install Cloud Native Runtimes:
    >**Note:** This step covers configuring a namespace to run Knative services.
    >If you rely on a SupplyChain to deploy Knative services into your cluster,
    >skip this step because namespace configuration is covered in
-   >[Set up developer namespaces to use installed packages](../set-up-namespaces.md).
+   >[Set up developer namespaces to use installed packages](../set-up-namespaces.hbs.md).
    >Otherwise, you must complete the following steps for each namespace where you create Knative services.
 
    Service accounts that run workloads using Cloud Native Runtimes need access to the image pull secrets for the Tanzu package.

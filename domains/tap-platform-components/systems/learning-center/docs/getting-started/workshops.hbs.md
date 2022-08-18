@@ -1,8 +1,8 @@
 # Learning Center Workshops
 
 Workshops are where you create your content. You can create a workshop for individual use or group multiple workshops
-together with a [Training Portal](training-portal.md). The following helps you get started with workshops. For more
-detailed instructions, go to [Working with Learning Center Workshops](../workshop-content/about.md)
+together with a [Training Portal](training-portal.hbs.md). The following helps you get started with workshops. For more
+detailed instructions, go to [Working with Learning Center Workshops](../workshop-content/about.hbs.md)
 
 ## <a id="create-workshop-env"></a>Creating the workshop environment
 

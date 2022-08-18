@@ -18,7 +18,7 @@ When Tanzu Application Platform is upgraded, new dependencies are installed whic
 workload images to rebuild.
 To ensure dependency compatibility, Tanzu Build Service only releases patches for
 dependencies in patch versions of Tanzu Application Platform.
-For upgrade instructions, see [Upgrading Tanzu Application Platform](../upgrading.md).
+For upgrade instructions, see [Upgrading Tanzu Application Platform](../upgrading.hbs.md).
 
 By default, Tanzu Build Service is installed with the `lite` set of dependencies,
 which are smaller-footprint and contain a subset of the buildpacks and stacks in
@@ -159,7 +159,7 @@ The following table compares the contents of the `lite` and `full` dependencies.
 
 >**Important:** The automatic updates feature is being deprecated.
 >The recommended way to patch dependencies is by upgrading Tanzu Application Platform
->to the latest patch version. For upgrade instructions, see [Upgrading Tanzu Application Platform](../upgrading.md).
+>to the latest patch version. For upgrade instructions, see [Upgrading Tanzu Application Platform](../upgrading.hbs.md).
 
 You can configure Tanzu Build Service to update dependencies in the background as they are released.
 This enables workloads to keep up to date automatically.

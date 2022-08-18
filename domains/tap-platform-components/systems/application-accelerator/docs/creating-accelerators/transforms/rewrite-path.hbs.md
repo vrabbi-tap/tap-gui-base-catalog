@@ -91,5 +91,5 @@ ensure the `regex` you provide indeed matches all files coming in.
 
 ## See also
 
-- Use [UniquePath](unique-path.hbs.md) to ensure rewritten paths don't clash with
+- Use [UniquePath](unique-path.hbs.hbs.md) to ensure rewritten paths don't clash with
   other files, or to decide which path to select if they do clash.

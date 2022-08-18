@@ -96,8 +96,8 @@ or as a standalone package installation, you don't know whether the configuratio
    > the pod might cause the loss of user preferences and manually registered entities.
    > If you have configured an external PostgreSQL database, `tap-gui` pods are not stateful.
    > In most cases, state is held in ConfigMaps, Secrets, or the database.
-   > For more information, see [Configuring the Tanzu Application Platform GUI database](database.md)
-   > and [Register components](catalog/catalog-operations.md#register-comp).
+   > For more information, see [Configuring the Tanzu Application Platform GUI database](database.hbs.md)
+   > and [Register components](catalog/catalog-operations.hbs.md#register-comp).
 
    To delete and re-instantiate the pod, run:
 
@@ -161,7 +161,7 @@ No communications error has occurred, but no resources were found.
 
 Confirm that you are using the correct label:
 
-1. Verify the [Component definition](catalog/catalog-operations.md) includes the annotation
+1. Verify the [Component definition](catalog/catalog-operations.hbs.md) includes the annotation
 `backstage.io/kubernetes-label-selector`.
 
 1. Confirm your Kubernetes resources correspond to that label drop-down menu.
@@ -189,12 +189,12 @@ You might receive the following error messages:
   - **Solution:** If the cluster is the same where **Tanzu Application Platform** is running, review
     the version installed to confirm it contains the desired resource.
     If the error is in a watched cluster, review the process to grant access to it in
-    [Viewing resources on multiple clusters in Tanzu Application Platform GUI](cluster-view-setup.md).
+    [Viewing resources on multiple clusters in Tanzu Application Platform GUI](cluster-view-setup.hbs.md).
 
 - `Knative is not installed on CLUSTER_NAME (status: 404). Contact your administrator.`
   - **Cause:** The cluster does not have Cloud Native Runtimes installed.
   - **Solution:** Install the Knative components by following the instructions in
-    [Install Cloud Native Runtimes](../cloud-native-runtimes/install-cnrt.md).
+    [Install Cloud Native Runtimes](../cloud-native-runtimes/install-cnrt.hbs.md).
 
 - `Error when querying cluster CLUSTER_NAME for resource KUBERNETES_RESOURCE_PATH (status: 404). Contact your administrator.`
   - **Cause:** The package that contains the resource is not installed.
@@ -250,7 +250,7 @@ not set up for Tanzu Application Platform GUI. It only appears in v1.2.0 and is 
 Register Maven artifacts with the service account of Tanzu Application Platform GUI by using the
 `package_overlays` key in the Tanzu Application Platform values file.
 
-For instructions, see [Customizing Package Installation](../customize-package-installation.hbs.md).
+For instructions, see [Customizing Package Installation](../customize-package-installation.hbs.hbs.md).
 
 The following is the overlay for adding Maven artifacts to the Tanzu Application Platform GUI service
 account:

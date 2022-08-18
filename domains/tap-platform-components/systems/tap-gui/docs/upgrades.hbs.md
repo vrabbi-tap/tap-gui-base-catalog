@@ -3,14 +3,14 @@
 This topic describes how to upgrade Tanzu Application Platform GUI outside of a
 Tanzu Application Platform profile installation.
 If you installed Tanzu Application Platform through a profile, see
-[Upgrading Tanzu Application Platform](../upgrading.md) instead.
+[Upgrading Tanzu Application Platform](../upgrading.hbs.md) instead.
 
 ## <a id="considerations"></a> Considerations
 
 As part of the upgrade, Tanzu Application Platform updates its container with the new version.
 
 As a result, if you installed Tanzu Application Platform GUI without the support of a backing
-[database](database.md), you lose your in-memory data for any manual component registrations
+[database](database.hbs.md), you lose your in-memory data for any manual component registrations
 when the container restarts.
 While the update is pulling the new pod from the registry, users might experience a short UI
 interruption and might need to re-authenticate because the in-memory session data is rebuilt.
@@ -18,7 +18,7 @@ interruption and might need to re-authenticate because the in-memory session dat
 ## <a id="upgrade-profile"></a> Upgrade within a Tanzu Application Platform profile
 
 If you installed Tanzu Application Platform GUI as part of a Tanzu Application Platform profile,
-see [Upgrading Tanzu Application Platform](../upgrading.md).
+see [Upgrading Tanzu Application Platform](../upgrading.hbs.md).
 
 ## <a id="upgrade-component"></a> Upgrade Tanzu Application Platform GUI individually
 

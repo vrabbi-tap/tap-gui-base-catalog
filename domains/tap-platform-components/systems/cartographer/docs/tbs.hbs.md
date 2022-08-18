@@ -92,7 +92,7 @@ builds of that Workload:
     settings.xml: <settings>...</settings>
   ```
 
->**Note:** See the Kpack [ServiceBinding documentation](https://github.com/pivotal/kpack/blob/main/docs/servicebindings.md) in GitHub 
+>**Note:** See the Kpack [ServiceBinding documentation](https://github.com/pivotal/kpack/blob/main/docs/servicebindings.hbs.md) in GitHub 
 for more details about build-time service bindings.
 
 >**Note:** these configuration only take effect when Kpack

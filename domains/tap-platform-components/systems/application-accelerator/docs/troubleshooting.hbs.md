@@ -123,7 +123,7 @@ Expression evaluation errors include:
     ```
 
     In most cases, an error in a `let` expression causes this error.
-    Review the error message and, for more information, see [SpEL samples](creating-accelerators/spel-samples.md).
+    Review the error message and, for more information, see [SpEL samples](creating-accelerators/spel-samples.hbs.md).
 
 - `SpelEvaluationException`, such as:
 
@@ -132,7 +132,7 @@ Expression evaluation errors include:
     ```
 
     In most cases, an error in a transform expression causes this error.
-    Review the error message and, for more information, see [SpEL samples](creating-accelerators/spel-samples.md).
+    Review the error message and, for more information, see [SpEL samples](creating-accelerators/spel-samples.hbs.md).
 
 
 ## <a id="ops-issues"></a> Operations issues

@@ -5,7 +5,7 @@ from the Tanzu Application Platform package repository.
 
 >**Note:** Use the instructions on this page if you do not want to use a profile to install packages.
 The full profile includes Out of the Box Supply Chain with Testing and Scanning.
-For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.md).
+For more information about profiles, see [About Tanzu Application Platform components and profiles](../about-package-profiles.hbs.md).
 
 The Out of the Box Supply Chain with Testing and Scanning package provides a
 ClusterSupplyChain that brings an application from source code to a deployed
@@ -18,10 +18,10 @@ instance that:
 
 ## <a id='ootb-sc-test-scan-prereqs'></a> Prerequisites
 
-- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.md).
-- Install cartographer. For more information, see [Install Supply Chain Choreographer](install-scc.md).
-- Install [Out of the Box Delivery Basic](install-ootb-sc-basic.md)
-- Install [Out of the Box Templates](install-ootb-templates.md)
+- Complete all prerequisites to install Tanzu Application Platform. For more information, see [Prerequisites](../prerequisites.hbs.md).
+- Install cartographer. For more information, see [Install Supply Chain Choreographer](install-scc.hbs.md).
+- Install [Out of the Box Delivery Basic](install-ootb-sc-basic.hbs.md)
+- Install [Out of the Box Templates](install-ootb-templates.hbs.md)
 
 ## <a id='ins-ootb-sc-test-scan'></a> Install
 

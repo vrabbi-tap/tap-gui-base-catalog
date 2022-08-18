@@ -85,7 +85,7 @@ SourceScan:
     watch kubectl get scantemplates,scanpolicies,sourcescans,imagescans,pods,jobs
     ```
 
-    For more information, refer to [Observing and Troubleshooting](../observing.md).
+    For more information, refer to [Observing and Troubleshooting](../observing.hbs.md).
 
 1. Deploy the resources by running:
 
@@ -100,7 +100,7 @@ SourceScan:
     ```
 
     The `Status.Conditions` includes a `Reason: EvaluationFailed` and `Message: Policy violated because of 7 CVEs`.
-    For more information, see [Viewing and Understanding Scan Status Conditions](../results.md).
+    For more information, see [Viewing and Understanding Scan Status Conditions](../results.hbs.md).
 
 1. <a id="modify-scan-policy"></a>If the failing CVEs are acceptable or the build needs to be deployed regardless of these CVEs,
 the app is patched to remove the vulnerabilities. Update the `ignoreCVEs` array in the ScanPolicy to

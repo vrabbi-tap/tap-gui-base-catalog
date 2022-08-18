@@ -9,7 +9,7 @@ and does not cover the details of invocation and passing of options, nor
 does it cover the way the result of invocation can be delivered / retrieved.
 
 For details about invocation over http, see
-[HTTP endpoint specification](endpoint-spec.md). Other implementations, 
+[HTTP endpoint specification](endpoint-spec.hbs.md). Other implementations, 
 for example, local invocation by using a CLI, can exist, and the concepts here
 remain applicable.
 
@@ -29,9 +29,9 @@ configuration of the accelerator are reported early.
 
 2. __Model Population with Option Values__: The model is initially populated 
 with all the values provided for invocation. Clients must provide values for 
-all options defined in the [Options specification](options-spec.md) 
+all options defined in the [Options specification](options-spec.hbs.md) 
 section of the manifest that are not configured with a 
-[`defaultValue`](options-spec.md#defaultValue).
+[`defaultValue`](options-spec.hbs.md#defaultValue).
    
 3. __Model Population with Option Values Defaults__: The options defined 
 in the manifest with a `defaultValue` and that haven't already been set are 
@@ -39,9 +39,9 @@ given their default value.
 
     The populated model is then validated against the accelerator manifest:
 
-    1. All passed-in options MUST have a valid [`name`](options-spec.md#name).
+    1. All passed-in options MUST have a valid [`name`](options-spec.hbs.md#name).
     2. All known options MUST be present. That is, the set of names declared must be a subset of the ones present.
-    3. All known options MUST be of a type that conforms to their declared [`dataType`](options-spec.md#dataType).
+    3. All known options MUST be of a type that conforms to their declared [`dataType`](options-spec.hbs.md#dataType).
 
     Failure to validate stops processing and causes an error being reported.
 

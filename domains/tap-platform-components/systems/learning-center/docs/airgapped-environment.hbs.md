@@ -6,7 +6,7 @@ Learning Center can run in an air-gapped environment but workshops do not have t
 
 ## <a id="workshop-yaml-changes"></a>Workshop yaml changes
 
-In an air-gapped environment a user has no Internet access, so workshop yamls should be [modified](./workshop-content/building-an-image.md) to use:
+In an air-gapped environment a user has no Internet access, so workshop yamls should be [modified](./workshop-content/building-an-image.hbs.md) to use:
 
 1. Private container registries.
 2. Private Maven, NPM, Python, Go, or any other language repository.
@@ -35,4 +35,4 @@ spec:
 
 ## <a id="internet-dependencies"></a>Internet dependencies
 
-If the workshop requires the installation of any Internet dependency, such as a Linux Tool or any other tool, it must be done in the workshop image. See [building an image](./workshop-content/building-an-image.md)
+If the workshop requires the installation of any Internet dependency, such as a Linux Tool or any other tool, it must be done in the workshop image. See [building an image](./workshop-content/building-an-image.hbs.md)

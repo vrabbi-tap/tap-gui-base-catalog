@@ -3,7 +3,7 @@
 This section explains how to migrate the `ClusterImagePolicy` resource
 from Image Policy Webhook to Policy Controller. For more information about
 additional features introduced in Policy Controller, see
-[Configuring Supply Chain Security Tools - Policy](configuring.md).
+[Configuring Supply Chain Security Tools - Policy](configuring.hbs.md).
 
 >**Note:** There is currently no equivalent of "AllowUnmatchedImages"
 VMware recommends that users sign public images and have the signature
@@ -18,7 +18,7 @@ update the Image Policy Webhook `ClusterImagePolicy` by adding `cosign-system`
 to the excluded namespaces. If an alternative `deployment_namespace` is
 specified for installing Policy Controller, exclude that namespace.
 For more information about how to exclude namespaces, see
-[Configuring Supply Chain Security Tools - Sign](../scst-sign/configuring.md#create-cip-resource)
+[Configuring Supply Chain Security Tools - Sign](../scst-sign/configuring.hbs.md#create-cip-resource)
 
 ## <a id="enable-controller"></a> Enable Policy Controller on Namespaces
 

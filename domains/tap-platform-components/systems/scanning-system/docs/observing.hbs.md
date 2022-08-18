@@ -73,7 +73,7 @@ Under `Status.Conditions`, for a condition look at the "Reason", "Type", "Messag
 
 #### <a id="debug-scanning-in-supplychain"></a> Debugging Scanning within a SupplyChain
 
-See [here](../cli-plugins/apps/debug-workload.md) for Tanzu workload commands for tailing build and runtime logs and getting workload status and details.
+See [here](../cli-plugins/apps/debug-workload.hbs.md) for Tanzu workload commands for tailing build and runtime logs and getting workload status and details.
 
 
 #### <a id="view-scan-controller-manager-logs"></a> Viewing the Scan-Controller manager logs
@@ -95,7 +95,7 @@ kubectl rollout restart deployment scan-link-controller-manager -n scan-link-sys
 
 #### <a id="miss-img-ps"></a> Missing target image pull secret
 
-Scanning an image from a private registry requires an image pull secret to exist in the Scan CRs namespace and be referenced as `grype.targetImagePullSecret` in `tap-values.yaml`. See [Installing the Tanzu Application Platform Package and Profiles](../install.md).
+Scanning an image from a private registry requires an image pull secret to exist in the Scan CRs namespace and be referenced as `grype.targetImagePullSecret` in `tap-values.yaml`. See [Installing the Tanzu Application Platform Package and Profiles](../install.hbs.md).
 
 If a private image scan is triggered and the secret is not configured, the scan job fails with the error as follows:
 
@@ -135,8 +135,8 @@ configurations to deactivate the Store:
 
   This means that the Syft Schema Version from the provided SBOM doesn't match the version supported by the installed grype-scanner. There are two different methods to resolve this incompatibility issue:
 
-  - (Preferred method) Install a version of [Tanzu Build Service](../tanzu-build-service/tbs-about.md) that provides an SBOM with a compatible Syft Schema Version.
-  - Deactivate the `failOnSchemaErrors` in `grype-values.yaml`. See [Install Supply Chain Security Tools - Scan](install-scst-scan.md). Although this change bypasses the check on Syft Schema Version, it does not resolve the incompatibility issue and produces a partial scanning result.
+  - (Preferred method) Install a version of [Tanzu Build Service](../tanzu-build-service/tbs-about.hbs.md) that provides an SBOM with a compatible Syft Schema Version.
+  - Deactivate the `failOnSchemaErrors` in `grype-values.yaml`. See [Install Supply Chain Security Tools - Scan](install-scst-scan.hbs.md). Although this change bypasses the check on Syft Schema Version, it does not resolve the incompatibility issue and produces a partial scanning result.
 
     ```yaml
     syft:

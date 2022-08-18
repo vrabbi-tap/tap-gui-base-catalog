@@ -9,7 +9,7 @@ This document describes how to install Supply Chain Security Tools - Scan
 
 Before installing Supply Chain Security Tools - Scan (Snyk Scanner):
 
-- Install [Supply Chain Security Tools - Scan](install-scst-scan.md). It must be present on the same cluster. The prerequisites for Scan are also required.
+- Install [Supply Chain Security Tools - Scan](install-scst-scan.hbs.md). It must be present on the same cluster. The prerequisites for Scan are also required.
 - Obtain a Snyk API Token from the [Snyk Docs](https://docs.snyk.io/snyk-cli/authenticate-the-cli-with-your-account).
 
 ## <a id="install-snyk"></a> Install
@@ -278,7 +278,7 @@ To verify the integration with Snyk, apply the following `ImageScan` and its `Sc
 
 ## <a id="sc-config"></a> Configure Supply Chains
 
-In order to scan your images with Snyk instead of the default Grype scanner in the [Out of the Box Supply Chain with Testing and Scanning](../scc/ootb-supply-chain-testing-scanning.md), you must update your Tanzu Application Platform installation.
+In order to scan your images with Snyk instead of the default Grype scanner in the [Out of the Box Supply Chain with Testing and Scanning](../scc/ootb-supply-chain-testing-scanning.hbs.md), you must update your Tanzu Application Platform installation.
  
 Add the `ootb_supply_chain_testing_scanning.scanning` section later to your `tap-values.yaml` and perform a [Tanzu Application Platform update](../upgrading.md#upgrading-tanzu-application-platform).
 

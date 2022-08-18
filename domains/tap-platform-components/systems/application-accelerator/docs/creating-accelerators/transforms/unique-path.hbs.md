@@ -1,7 +1,7 @@
 # UniquePath transform
 
 You can use the `UniquePath` transform to ensure there are no `path` conflicts between files transformed.
-You can often use this at the tail of a [Chain](chain.hbs.md).
+You can often use this at the tail of a [Chain](chain.hbs.hbs.md).
 
 ## <a id="syntax-ref"></a>Syntax reference
 
@@ -30,7 +30,7 @@ chain:
 
 ## See also
 
-- `UniquePath` uses a [Conflict Resolution](conflict-resolution.hbs.md) strategy to decide
+- `UniquePath` uses a [Conflict Resolution](conflict-resolution.hbs.hbs.md) strategy to decide
 what to do when several input files use the same `path`.
-- [Combo](combo.hbs.md) implicitly embeds a `UniquePath` after the [Merge](merge.hbs.md) defined by 
+- [Combo](combo.hbs.md) implicitly embeds a `UniquePath` after the [Merge](merge.hbs.hbs.md) defined by 
 its `merge` property.

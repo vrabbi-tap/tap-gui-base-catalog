@@ -5,7 +5,7 @@ they are being copied to their destination. The replacement values are the resul
 of dynamic evaluation of [SpEL expressions](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions).
 
 This transform is text-oriented and requires knowledge of how to interpret the stream of bytes that make up the file contents into text.
-All files are assumed to use `UTF-8` encoding by default, but you can use the [UseEncoding](use-encoding.hbs.md) transform upfront to specify a different charset to use on some files.
+All files are assumed to use `UTF-8` encoding by default, but you can use the [UseEncoding](use-encoding.hbs.hbs.md) transform upfront to specify a different charset to use on some files.
 
 You can use `ReplaceText` transform in one of two ways:
 
@@ -101,4 +101,4 @@ chain:
 
 ## See also
 
-- [UseEncoding](use-encoding.hbs.md)
+- [UseEncoding](use-encoding.hbs.hbs.md)

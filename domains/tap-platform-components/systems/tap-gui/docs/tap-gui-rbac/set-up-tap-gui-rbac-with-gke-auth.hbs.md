@@ -5,7 +5,7 @@ GKE cluster.
 
 After the authorization is enabled, you can view your runtime resources on a remote cluster in
 Tanzu Application Platform GUI. For more information, see
-[View runtime resources on remote clusters](view-rsrcs-rbac-only-global.md).
+[View runtime resources on remote clusters](view-rsrcs-rbac-only-global.hbs.md).
 
 ## <a id="googles-oidc-provider"></a> Use Google Auth
 

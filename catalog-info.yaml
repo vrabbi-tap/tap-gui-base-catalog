@@ -6,7 +6,6 @@ metadata:
 spec:
   targets:
     - ./orgs/default.yaml
-    - ./orgs/default/team.yaml
     - ./orgs/users.yaml
     - ./orgs/dev.yaml
     - ./orgs/platform.yaml

@@ -3,7 +3,7 @@ kind: Component
 metadata:
   annotations:
     backstage.io/kubernetes-label-selector: name=application-live-view-connector
-    prometheus.io/rule: sum(rate(container_cpu_usage_seconds_total{pod=~"^application-live-view-connector-.*"}[1m])) by (pod)
+    prometheus.io/rule: sum(rate(container_cpu_usage_seconds_total{pod=~"^application-live-view-connector-.*"}[1m])) by (pod),sum(rate(container_memory_usage_bytes{pod=~"^application-live-view-connector-.*"}[1m])) by (pod),sum(rate(container_network_receive_packets_total{pod=~"^application-live-view-connector-.*"}[1m])) by (pod),sum(rate(container_network_transmit_packets_total{pod=~"^application-live-view-connector-.*"}[1m])) by (pod),sum(rate(container_fs_reads_total{pod=~"^application-live-view-connector-.*"}[1m])) by (pod),sum(rate(container_fs_writes_total{pod=~"^application-live-view-connector-.*"}[1m])) by (pod)
   description: Tanzu Application Live View Connector Component
   name: application-live-view-connector
   tags:

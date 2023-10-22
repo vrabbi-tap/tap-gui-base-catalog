@@ -3,7 +3,7 @@ kind: Component
 metadata:
   annotations:
     backstage.io/kubernetes-label-selector: app=api-portal-server
-    prometheus.io/rule: sum(container_memory_working_set_bytes{job="kubelet", metrics_path="/metrics/cadvisor", cluster="", namespace="accelerator-system", pod="acc-engine-548f89484-vffz8", image!=""}) by (container) / sum(cluster:namespace:pod_memory:active:kube_pod_container_resource_requests{cluster="", namespace="accelerator-system", pod="acc-engine-548f89484-vffz8"}) by (container)
+    prometheus.io/rule: container_cpu_usage_seconds_total{namespace="api-portal"}
   description: Tanzu API Portal Component
   name: api-portal
   tags:

@@ -3,6 +3,7 @@ kind: Component
 metadata:
   annotations:
     backstage.io/kubernetes-label-selector: name=application-live-view-connector
+    prometheus.io/rule: sum(rate(container_cpu_usage_seconds_total{pod=~"^application-live-view-connector-.*"}[1m])) by (pod)
   description: Tanzu Application Live View Connector Component
   name: application-live-view-connector
   tags:

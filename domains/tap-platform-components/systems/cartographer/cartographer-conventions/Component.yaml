@@ -13,3 +13,18 @@ spec:
   owner: platform-team
   system: cartographer
   type: service
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/component=conventions
+  description: Cartographer Conventions Controller Component
+  name: cartographer-conventions-2
+  tags:
+  - v1alpha1
+spec:
+  lifecycle: production
+  owner: platform-team
+  system: cartographer
+  type: service

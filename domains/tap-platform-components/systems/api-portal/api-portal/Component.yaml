@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
+    backstage.io/kubernetes-id: api-portal
     backstage.io/kubernetes-label-selector: app=api-portal-server
     prometheus.io/rule: container_cpu_usage_seconds_total{namespace="api-portal"}
   description: Tanzu API Portal Component
